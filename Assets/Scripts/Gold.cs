@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Gold : MonoBehaviour
 {
@@ -14,4 +15,13 @@ public class Gold : MonoBehaviour
             return true;
         }else return false;
     }
+    // private void Update() {
+    //     if (Input.GetKeyUp(KeyCode.Q)) {
+    //         AddGold(10);
+    //     }
+    //
+    //     if (Input.GetKeyUp(KeyCode.A)) {
+    //         RemoveGold(1);
+    //     }
+    // }
 }

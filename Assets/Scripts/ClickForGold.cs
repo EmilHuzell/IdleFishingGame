@@ -5,6 +5,6 @@ using UnityEngine;
 public class ClickForGold : MonoBehaviour {
     public float goldToAddOnClick;
     public void Click() {
-        Gold.AddGold(goldToAddOnClick);
+        //SGold.AddGold(goldToAddOnClick);
     }
 }

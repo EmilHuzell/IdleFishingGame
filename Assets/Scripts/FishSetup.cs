@@ -10,7 +10,7 @@
                 foreach (var fish in Fishes)
                 {
                     var newproduct = Instantiate(prefab, transform);
-                    newproduct.setup(Fishes);
+                    newproduct.setup(fish);
                 }
             }
     }

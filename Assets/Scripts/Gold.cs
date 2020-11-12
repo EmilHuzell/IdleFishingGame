@@ -2,7 +2,7 @@
 
 public class Gold : MonoBehaviour
 {
-    public int CurrentGold => PlayerPrefs.GetInt("Gold");    
+    public static int CurrentGold => PlayerPrefs.GetInt("Gold");    
     
     public void AddGold(float goldToAdd) {
         PlayerPrefs.SetInt("Gold", CurrentGold + Mathf.RoundToInt(goldToAdd));

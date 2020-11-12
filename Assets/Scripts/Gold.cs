@@ -1,27 +1,20 @@
-﻿using System;
+﻿using System.Numerics;
 using UnityEngine;
-
 public class Gold : MonoBehaviour
 {
-    public static int CurrentGold => PlayerPrefs.GetInt("Gold");    
-    
-    public static void AddGold(float goldToAdd) {
-        PlayerPrefs.SetInt("Gold", CurrentGold + Mathf.RoundToInt(goldToAdd));
+    public static BigInteger CurrentGold { get => SaveMethods.LoadValue("Gold"); set => SaveMethods.SaveValue("Gold", value); }
+
+    public static void AddGold(BigInteger goldToAdd) {
+        CurrentGold += goldToAdd;
     }
 
-    public static bool RemoveGold(float goldToRemove) {
-        if (goldToRemove >= 0f) {
-            PlayerPrefs.SetInt("Gold", CurrentGold - Mathf.RoundToInt(goldToRemove));
-            return true;
-        }else return false;
+    public static void MultiplyGold(BigInteger multiplyFactor) {
+        CurrentGold *= multiplyFactor;
     }
-    // private void Update() {
-    //     if (Input.GetKeyUp(KeyCode.Q)) {
-    //         AddGold(10);
-    //     }
-    //
-    //     if (Input.GetKeyUp(KeyCode.A)) {
-    //         RemoveGold(1);
-    //     }
-    // }
+    
+    public static bool RemoveGold(BigInteger goldToRemove) {
+        if (goldToRemove <= 0) return false;
+        CurrentGold -= goldToRemove;
+        return true;
+    }
 }

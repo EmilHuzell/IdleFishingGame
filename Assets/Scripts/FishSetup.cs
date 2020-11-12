@@ -9,8 +9,9 @@
             {
                 foreach (var fish in Fishes)
                 {
-                    var newproduct = Instantiate(prefab, transform);
-                    newproduct.setup(fish);
+                    var newFish = Instantiate(prefab, transform);
+                    newFish.transform.position = new Vector2(Random.Range(0,800) ,Random.Range(-100,100) );
+                    newFish.setup(fish);
                 }
             }
     }

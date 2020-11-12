@@ -15,7 +15,7 @@ public class AutoFisherType : ScriptableObject
 
     public BigInteger CurrentCost(BigInteger producerAmount)
     {
-        return BaseCost * BigInteger.Pow(producerAmount, 2);
+        return BaseCost * BigInteger.Pow(producerAmount, CostIncrease);
     }
     public BigInteger CurrentProduction(int producerAmount)
     {

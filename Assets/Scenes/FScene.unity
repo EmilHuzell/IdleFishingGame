@@ -256,8 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoFisherType: {fileID: 11400000, guid: 4a8460bbef6d8eb48b52a2bf07d10f60, type: 2}
   timeInvested: 0
-  fisherAmount: 0
-  currentUpgradeCost: 0
+  currentUpgradeCost: 
 --- !u!1 &466499161
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,10 +937,10 @@ RectTransform:
   m_Father: {fileID: 1623898058}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -598.5, y: -196}
-  m_SizeDelta: {x: 5.65, y: 6.71}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 123, y: 141}
+  m_SizeDelta: {x: 5.6500244, y: 6.7099915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1623898054
 GameObject:

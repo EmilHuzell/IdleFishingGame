@@ -13,7 +13,7 @@ public class AutoFisherSetup : MonoBehaviour
         {
             AutoFisher newAutofisher = Instantiate(autoFisherPrefab);
             newAutofisher.transform.SetParent(transform);
-            newAutofisher.autoFisherType = autoFisher;
+            newAutofisher.Setup(autoFisher);
         }
     }
 }

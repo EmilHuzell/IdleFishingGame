@@ -10,12 +10,15 @@ public class AutoFisher : MonoBehaviour
     public float timeInvested;
     public string currentUpgradeCost;
     public Text producerName;
+    public Text costText;
 
     public int FisherAmount { get => PlayerPrefs.GetInt($"{autoFisherType.name}_Amount", 0); set => PlayerPrefs.SetInt($"{autoFisherType.name}_Amount", value); }
 
-    private void Awake()
+    public void Setup(AutoFisherType autoFisherType)
     {
-        //producerName.text = autoFisherType.name;
+        this.autoFisherType = autoFisherType;
+        UpdateNameAndIcon();
+        UpdateCostText();
     }
     void Update()
     {
@@ -24,8 +27,7 @@ public class AutoFisher : MonoBehaviour
         {
             Produce();
         }
-        currentUpgradeCost = Converters.BigIntToString(autoFisherType.CurrentCost(FisherAmount));
-        if (Input.GetKeyDown(KeyCode.U))
+        if (false && Input.GetKeyDown(KeyCode.U))
         {
             Upgrade();
         }
@@ -38,9 +40,19 @@ public class AutoFisher : MonoBehaviour
     public void Upgrade()
     {
         Gold.RemoveGold(autoFisherType.CurrentCost(FisherAmount));
-        {
-            FisherAmount++;
-            Debug.Log("Amount of fishers is: " + FisherAmount);
-        }
+        FisherAmount++;
+        Debug.Log("Amount of fishers is: " + FisherAmount);
+        UpdateCostText();
+    }
+    void UpdateNameAndIcon()
+    {
+        if (producerName != null)
+            producerName.text = autoFisherType.name;
+    }
+    void UpdateCostText()
+    {
+        currentUpgradeCost = Converters.BigIntToString(autoFisherType.CurrentCost(FisherAmount));
+        if (costText != null)
+            costText.text = $"Costs: {currentUpgradeCost}";
     }
 }

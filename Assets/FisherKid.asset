@@ -15,5 +15,5 @@ MonoBehaviour:
   texture: {fileID: 0}
   BaseProduce: 1
   BaseCost: 1
-  CostIncrease: 1.05
-  ProduceTime: 1
+  CostIncrease: 2
+  ProduceTime: 10

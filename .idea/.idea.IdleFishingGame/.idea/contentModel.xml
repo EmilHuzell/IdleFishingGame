@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Apple.txt" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="ClickForGold.cs" t="Include" />
           <e p="Gold.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="CurrentGoldToText.cs" t="Include" />

@@ -10,12 +10,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ClickForGold.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CurrentGoldToText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gold.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ClickForGold.cs" />
       </list>
     </option>
   </component>
@@ -58,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605168795602</updated>
-      <workItem from="1605168800461" duration="1117000" />
+      <workItem from="1605168800461" duration="1492000" />
     </task>
     <servers />
   </component>

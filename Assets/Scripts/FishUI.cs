@@ -15,6 +15,6 @@ public class FishUI : MonoBehaviour
     {
         this.fishType = fishType;
         gameObject.name = fishType.name;
-        this.fishSize = Random.Range(fishType.sizeMin, fishType.sizeMax)
+        this.fishSize = Random.Range(fishType.sizeMin, fishType.sizeMax);
     }
 }

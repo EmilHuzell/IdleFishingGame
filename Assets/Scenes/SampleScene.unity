@@ -194,6 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 322071814}
   - component: {fileID: 322071813}
+  - component: {fileID: 322071815}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Untagged
@@ -227,6 +228,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &322071815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322071812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ed3e9568a808045b8357ab57e7dc15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldToAddOnClick: 10
 --- !u!1 &466499161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,7 +1186,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1624598662}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 322071815}
+        m_TargetAssemblyTypeName: ClickForGold, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1624598662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1501,7 +1527,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Add Gold!
 --- !u!222 &1787809109
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b099cffa1fe441147b338e80529d62cb, type: 3}
   m_Name: FisherKid
   m_EditorClassIdentifier: 
-  texture: {fileID: 0}
+  icon: {fileID: 0}
   BaseProduce: 1
-  BaseCost: 10
-  CostIncrease: 2
-  ProduceTime: 10
+  BaseCost: 20
+  CostIncrease: 1.05
+  ProduceTime: 1

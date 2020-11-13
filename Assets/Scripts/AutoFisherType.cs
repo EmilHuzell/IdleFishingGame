@@ -6,7 +6,7 @@ using System.Numerics;
 [CreateAssetMenu(menuName = "Types/AutoFisherType")]
 public class AutoFisherType : ScriptableObject
 {
-    public Texture texture;
+    public Sprite icon;
     public int BaseProduce = 10;
     //public float ProduceIncrease = 1.05f;
     public int BaseCost = 10;
@@ -17,12 +17,7 @@ public class AutoFisherType : ScriptableObject
 
     public void UpdateCost()
     {
-        CurrentCost = MultiplyBigIntByFloat(CurrentCost, CostIncrease);
-    }
-    public BigInteger MultiplyBigIntByFloat(BigInteger value, float f)
-    {
-        value *= Mathf.RoundToInt(f * 100);
-        return (value / 100);
+        CurrentCost = MathFunctions.MultiplyBigIntByFloat(CurrentCost, CostIncrease);
     }
     public BigInteger CurrentProduction(int producerAmount)
     {

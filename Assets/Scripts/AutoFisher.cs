@@ -9,6 +9,7 @@ public class AutoFisher : MonoBehaviour
     public AutoFisherType autoFisherType;
     public float timeInvested;
     public string currentUpgradeCost;
+    public Image image;
     public Text producerName;
     public Text costText;
 
@@ -54,6 +55,10 @@ public class AutoFisher : MonoBehaviour
     {
         if (producerName != null)
             producerName.text = autoFisherType.name;
+        if (autoFisherType.icon != null && image != null)
+        {
+            image.sprite = autoFisherType.icon;
+        }
     }
     void UpdateCostText()
     {

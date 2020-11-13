@@ -1,16 +1,14 @@
 ﻿using System.Numerics;
-using UnityEngine.UI;
-
 
 public static class PrettifyText {
         
     //I've come to the conclusion that This class will be big enough be used as it's own class.
     //This is why i put it in a separate class.
         
-    //TODO: Method which returns K, M, B, T, Q for starters.
+    //Method which returns K, M, B, T, Q for starters.
     //This method should be a switch or an enum perhaps.
     
-    //TODO: Find a way to get the desired suffix based on what amount of numbers we have ATM
+    //Find a way to get the desired suffix based on what amount of numbers we have ATM
 
     private static char Suffix(string currentGold) {
         var currentGoldString = Converters.BigIntToString(Gold.CurrentGold);

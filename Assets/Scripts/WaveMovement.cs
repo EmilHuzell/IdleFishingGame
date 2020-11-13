@@ -30,7 +30,7 @@ public class WaveMovement : MonoBehaviour
             this.angle += this.speed;
         }
         
-        if(this.angle > Mathf.PI*2){
+        if(this.angle > Mathf.PI*2 || this.angle < -Mathf.PI*2){
             this.angle = 0;
         }
 

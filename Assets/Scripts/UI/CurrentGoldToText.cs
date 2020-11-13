@@ -6,9 +6,6 @@ public class CurrentGoldToText : MonoBehaviour
 {
     private void Update() {
         this.GetComponent<Text>().text = $"Gold: {PrettifyText.Format(Gold.CurrentGold)}";
-        if (SceneManager.GetActiveScene().name == "MScene") {
-            Debug.Log(Gold.CurrentGold.ToString());
-        }
     }
 
     // private string PrettifyCurrentGold() {

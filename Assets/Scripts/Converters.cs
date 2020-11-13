@@ -30,5 +30,15 @@ public static class Converters {
         return StringToBigInt(string.Concat(numberString));
     }
 
+    public static BigInteger DoubleToBigInt(double doubleToConvert) {
+        return (BigInteger) doubleToConvert;
+    }
+
+    public static Double BigIntToDouble(BigInteger bigIntegerToConvert)
+    {
+        return (double) bigIntegerToConvert;
+    }
+    
+    
     
 }

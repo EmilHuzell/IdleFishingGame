@@ -1,7 +1,6 @@
 ﻿using System.Numerics;
 
 public static class PrettifyText {
-        
     //I've come to the conclusion that This class will be big enough be used as it's own class.
     //This is why i put it in a separate class.
         
@@ -10,23 +9,41 @@ public static class PrettifyText {
     
     //Find a way to get the desired suffix based on what amount of numbers we have ATM
 
-    private static char Suffix(string currentGold) {
+    private static string Suffix(string currentGold) {
         var currentGoldString = Converters.BigIntToString(Gold.CurrentGold);
         int affix = (currentGoldString.Length - 1) / 3;
 
         switch (affix) {
             case 1:
-                return 'K';
+                return "K";
             case 2:
-                return 'M';
+                return "M";
             case 3:
-                return 'B';
+                return "B";
             case 4:
-                return 'T';
+                return "T";
             case 5:
-                return 'Q';
+                return "Q";
+            case 6:
+                return "qU";
+            case 7:
+                return "S";
+            case 8:
+                return "O";
+            case 9:
+                return "N";
+            case 10:
+                return "D";
+            case 11:
+                return "U";
+            case 12:
+                return "dU";
+            case 13:
+                return "tR";
+            case 14:
+                return "qUA";
             default:
-                return 'X';
+                return "X";
         }
     }
 
@@ -34,10 +51,10 @@ public static class PrettifyText {
         string first = currentGold.Substring(0, currentGold.Length - 3);
         string decimals = currentGold.Substring(currentGold.Length - 3);
 
-        return FormatString(first, decimals, 'K');
+        return FormatString(first, decimals, "K");
     }
 
-    private static string FormatString(string first, string decimals, char suffix) {
+    private static string FormatString(string first, string decimals, string suffix) {
         return string.Format("{0}.{1}{2}", first, decimals, suffix);
     }
 

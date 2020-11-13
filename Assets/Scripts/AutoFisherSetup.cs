@@ -7,7 +7,7 @@ public class AutoFisherSetup : MonoBehaviour
     public List<AutoFisherType> autoFisherTypes = new List<AutoFisherType>();
     public AutoFisher autoFisherPrefab;
 
-    private void Awake()
+    private void Start()
     {
         foreach (var autoFisher in autoFisherTypes)
         {

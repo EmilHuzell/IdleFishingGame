@@ -69,6 +69,8 @@ public class AutoFisher : MonoBehaviour
     }
     void AddSleepProduction()
     {
-        //Gold.AddGold(autoFisherType.CurrentProduction(FisherAmount) * CONVERSION DOUBLE TO BIGINT (SystemTime.difference.TotalSeconds * 0.25f));
+        Gold.AddGold(autoFisherType.CurrentProduction(FisherAmount) * Converters.DoubleToBigInt(SystemTime.difference.TotalSeconds * 0.25f));
+        //Debug.Log(SystemTime.difference.TotalSeconds);
+        //Debug.Log(Converters.DoubleToBigInt(SystemTime.difference.TotalSeconds * 0.25f));
     }
 }

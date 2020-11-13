@@ -10,7 +10,7 @@ public class SystemTime : MonoBehaviour
 
     static double DifferenceInSeconds { get => difference.TotalSeconds; }
 
-    void Start()
+    void Awake()
     {
         //Store the current time when it starts
         startTime = System.DateTime.Now;

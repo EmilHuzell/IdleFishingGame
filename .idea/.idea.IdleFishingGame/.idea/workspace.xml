@@ -20,8 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90eca5f-eebd-435f-85f0-7c3036c09b58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fishes/Golden Fish.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fishes/Golden Fish.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fishes/Shark.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fishes/Shark.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishSetup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +41,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FisherPlacement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AutoFisherSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C86099A8-45D8-4352-831D-42392525F93D/0e/9f828281/BigInteger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ClickForGold.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -42,6 +54,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Gold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ClickForGold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishSetup.cs" />
       </list>
     </option>
@@ -88,6 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605168795602</updated>
       <workItem from="1605168800461" duration="1492000" />
+      <workItem from="1605254791085" duration="4960000" />
     </task>
     <task id="LOCAL-00001" summary="Adds FishUI FishSetup">
       <created>1605173857637</created>
@@ -127,9 +141,14 @@
     <MESSAGE value="Adds Fishtype scriptObject" />
     <MESSAGE value="Adds FishUI FishSetup" />
     <MESSAGE value="Small Corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small Corrections" />
+    <MESSAGE value="Adds Fish Texture" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds Fish Texture" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605255476913">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605255476913" />
     <state x="184" y="86" key="MergeDialog" timestamp="1605172905349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -145,6 +164,4 @@
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605170365300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1080.0.1080.1880/1920.0.1680.1010@0.0.1920.1040" timestamp="1605170365300" />
-  </component>
-</project>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1080.0.1080.1880/1920.0.1680.1010@0.0.1920.1040" timestamp="16

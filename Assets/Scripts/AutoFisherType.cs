@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Numerics;
 
 [CreateAssetMenu(menuName = "Types/AutoFisherType")]
 public class AutoFisherType : ScriptableObject
@@ -9,15 +10,15 @@ public class AutoFisherType : ScriptableObject
     public int BaseProduce = 10;
     //public float ProduceIncrease = 1.05f;
     public int BaseCost = 10;
-    public float CostIncrease = 1.05f;
+    public int CostIncrease = 2; //Should be float... Currently a int due to BigInteger.Pow
     public float ProduceTime = 1;
 
-    public int CurrentCost(int producerAmount)
+    public BigInteger CurrentCost(BigInteger producerAmount)
     {
-        return Mathf.RoundToInt(BaseCost * Mathf.Pow(CostIncrease, producerAmount));
+        return BaseCost * BigInteger.Pow(producerAmount, CostIncrease);
     }
-    public int CurrentProduction(int producerAmount)
+    public BigInteger CurrentProduction(int producerAmount)
     {
-        return Mathf.RoundToInt(BaseProduce * producerAmount);
+        return BaseProduce * producerAmount;
     }
 }

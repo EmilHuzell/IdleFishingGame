@@ -13,6 +13,8 @@ public class AutoFisher : MonoBehaviour
     public Text costText;
 
     public int FisherAmount { get => PlayerPrefs.GetInt($"{autoFisherType.name}_Amount", 0); set => PlayerPrefs.SetInt($"{autoFisherType.name}_Amount", value); }
+    public BigInteger CurrentCost { get => autoFisherType.CurrentCost(FisherAmount); }
+    public bool CanAfford { get => Gold.CurrentGold >= CurrentCost; }
 
     public void Setup(AutoFisherType autoFisherType)
     {
@@ -39,10 +41,13 @@ public class AutoFisher : MonoBehaviour
     }
     public void Upgrade()
     {
-        Gold.RemoveGold(autoFisherType.CurrentCost(FisherAmount));
-        FisherAmount++;
-        Debug.Log("Amount of fishers is: " + FisherAmount);
-        UpdateCostText();
+        if (CanAfford)
+        {
+            Gold.RemoveGold(CurrentCost);
+            FisherAmount++;
+            Debug.Log("Amount of fishers is: " + FisherAmount);
+            UpdateCostText();
+        }
     }
     void UpdateNameAndIcon()
     {
@@ -51,7 +56,7 @@ public class AutoFisher : MonoBehaviour
     }
     void UpdateCostText()
     {
-        currentUpgradeCost = Converters.BigIntToString(autoFisherType.CurrentCost(FisherAmount));
+        currentUpgradeCost = Converters.BigIntToString(CurrentCost);
         if (costText != null)
             costText.text = $"Costs: {currentUpgradeCost}";
     }

@@ -6,7 +6,16 @@ public static class SaveMethods {
         PlayerPrefs.SetString(type, Converters.BigIntToString(value));
     }
 
-    public static BigInteger LoadValue(string type) {
+    public static BigInteger LoadValue(string type)
+    {
+        return Converters.StringToBigInt(PlayerPrefs.GetString(type));
+    }
+    public static BigInteger LoadValue(string type, string defaultValue)
+    {
+        if(PlayerPrefs.GetString(type) == "")
+        {
+            PlayerPrefs.SetString(type, defaultValue);
+        }
         return Converters.StringToBigInt(PlayerPrefs.GetString(type));
     }
 }

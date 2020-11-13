@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texture: {fileID: 0}
   BaseProduce: 1
-  BaseCost: 1
+  BaseCost: 10
   CostIncrease: 2
   ProduceTime: 10

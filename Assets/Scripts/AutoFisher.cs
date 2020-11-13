@@ -13,7 +13,7 @@ public class AutoFisher : MonoBehaviour
     public Text costText;
 
     public int FisherAmount { get => PlayerPrefs.GetInt($"{autoFisherType.name}_Amount", 0); set => PlayerPrefs.SetInt($"{autoFisherType.name}_Amount", value); }
-    public BigInteger CurrentCost { get => autoFisherType.CurrentCost(FisherAmount); }
+    public BigInteger CurrentCost { get => autoFisherType.CurrentCost; }
     public bool CanAfford { get => Gold.CurrentGold >= CurrentCost; }
 
     public void Setup(AutoFisherType autoFisherType)
@@ -46,6 +46,7 @@ public class AutoFisher : MonoBehaviour
             Gold.RemoveGold(CurrentCost);
             FisherAmount++;
             Debug.Log("Amount of fishers is: " + FisherAmount);
+            autoFisherType.UpdateCost();
             UpdateCostText();
         }
     }

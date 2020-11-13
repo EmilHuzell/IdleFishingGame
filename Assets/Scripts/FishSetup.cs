@@ -10,7 +10,7 @@
                 foreach (var fish in Fishes)
                 {
                     var newFish = Instantiate(prefab, transform);
-                    newFish.transform.position = new Vector2(Random.Range(0,800) ,Random.Range(-100,100) );
+                    newFish.transform.position = new Vector2(Random.Range(100,800) ,Random.Range(0,200) );
                     newFish.setup(fish);
                 }
             }

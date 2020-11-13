@@ -46,7 +46,7 @@ public class AutoFisher : MonoBehaviour
         {
             Gold.RemoveGold(CurrentCost);
             FisherAmount++;
-            Debug.Log("Amount of fishers is: " + FisherAmount);
+            //Debug.Log("Amount of fishers is: " + FisherAmount);
             autoFisherType.UpdateCost();
             UpdateCostText();
         }

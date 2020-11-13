@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 3040529484916437850}
   - component: {fileID: 7201025623918600775}
   - component: {fileID: 6220387452541644371}
-  - component: {fileID: 7864093781402866331}
   m_Layer: 5
   m_Name: Fish
   m_TagString: Untagged
@@ -143,32 +142,9 @@ MonoBehaviour:
   type: {fileID: 4687816239078893651}
   size: {fileID: 8953194917496721835}
   rawImage: {fileID: 5246517062464687229}
---- !u!114 &7864093781402866331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 467265859265187723}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
+  moveDirection: {x: 0, y: 80, z: 0}
+  alphaFadeSpeed: 0.5
+  variation: 50
 --- !u!1 &4769696885795246144
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7647059}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

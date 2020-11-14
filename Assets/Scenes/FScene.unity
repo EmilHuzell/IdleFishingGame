@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 322071814}
   - component: {fileID: 322071813}
   - component: {fileID: 322071815}
+  - component: {fileID: 322071816}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Untagged
@@ -240,7 +241,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ed3e9568a808045b8357ab57e7dc15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldToAddOnClick: 1000000
+  goldToAddOnClick: 10
+--- !u!114 &322071816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322071812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 412d0ce7261df5c4eacbce3981e1594e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &756230723
 GameObject:
   m_ObjectHideFlags: 0

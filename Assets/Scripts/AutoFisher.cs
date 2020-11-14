@@ -22,6 +22,7 @@ public class AutoFisher : MonoBehaviour
         this.autoFisherType = autoFisherType;
         UpdateNameAndIcon();
         UpdateCostText();
+        AddSleepProduction();
     }
     void Update()
     {
@@ -65,5 +66,11 @@ public class AutoFisher : MonoBehaviour
         currentUpgradeCost = Converters.BigIntToString(CurrentCost);
         if (costText != null)
             costText.text = $"Costs: {currentUpgradeCost}";
+    }
+    void AddSleepProduction()
+    {
+        Gold.AddGold(autoFisherType.CurrentProduction(FisherAmount) * Converters.DoubleToBigInt(SystemTime.difference.TotalSeconds * 0.25f));
+        //Debug.Log(SystemTime.difference.TotalSeconds);
+        //Debug.Log(Converters.DoubleToBigInt(SystemTime.difference.TotalSeconds * 0.25f));
     }
 }

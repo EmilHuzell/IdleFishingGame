@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Numerics;
 
 public static class MathFunctions
@@ -9,5 +7,10 @@ public static class MathFunctions
     {
         value *= Mathf.RoundToInt(f * 100);
         return (value / 100);
+    }
+
+    public static float MultiplyFloatByBigInt(float value, BigInteger bigInteger)
+    {
+        return (float)BigInteger.Multiply(Mathf.RoundToInt(value), bigInteger);
     }
 }

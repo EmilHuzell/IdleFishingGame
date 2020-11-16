@@ -57,10 +57,4 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
-IdleFishing/Temp/UnityLockfile
-IdleFishing/Library/Artifacts/3f/3f3c21a57a8f5942895e8f9d0ee16b2e
-IdleFishing/Library/SourceAssetDB
-IdleFishing/Library/SourceAssetDB
-IdleFishing/Library/ArtifactDB
-IdleFishing/Library/SourceAssetDB
+.idea/.idea.IdleFishingGame/.idea/workspace.xml

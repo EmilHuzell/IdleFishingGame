@@ -9,20 +9,31 @@
       <e p="Assets" t="Include">
         <e p="Apple.txt" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="AutoFisher.cs" t="Include" />
-          <e p="AutoFisherSetup.cs" t="Include" />
-          <e p="AutoFisherType.cs" t="Include" />
-          <e p="ClickForGold.cs" t="Include" />
-          <e p="Converters.cs" t="Include" />
-          <e p="FisherPlacement.cs" t="Include" />
-          <e p="FishSetup.cs" t="Include" />
-          <e p="FishType.cs" t="Include" />
-          <e p="FishUI.cs" t="Include" />
-          <e p="Gold.cs" t="Include" />
-          <e p="PrettifyText.cs" t="Include" />
-          <e p="SaveMethods.cs" t="Include" />
+          <e p="AutoProducers" t="Include">
+            <e p="AutoFisher.cs" t="Include" />
+            <e p="AutoFisherSetup.cs" t="Include" />
+            <e p="AutoFisherType.cs" t="Include" />
+          </e>
+          <e p="Fish" t="Include">
+            <e p="FishSetup.cs" t="Include" />
+            <e p="FishType.cs" t="Include" />
+            <e p="FishUI.cs" t="Include" />
+          </e>
+          <e p="General" t="Include">
+            <e p="ClickForGold.cs" t="Include" />
+            <e p="Gold.cs" t="Include" />
+            <e p="WaveMovement.cs" t="Include" />
+          </e>
+          <e p="Tools.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="CurrentGoldToText.cs" t="Include" />
+          </e>
+          <e p="Utility" t="Include">
+            <e p="Converters.cs" t="Include" />
+            <e p="MathFunctions.cs" t="Include" />
+            <e p="PrettifyText.cs" t="Include" />
+            <e p="SaveMethods.cs" t="Include" />
+            <e p="SystemTime.cs" t="Include" />
           </e>
         </e>
       </e>

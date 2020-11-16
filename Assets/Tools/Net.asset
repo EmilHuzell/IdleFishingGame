@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Net
   m_EditorClassIdentifier: 
   sizeMin: 5
-  sizeMax: 10
+  sizeMax: 15
   unlocked: 0
   image: {fileID: 0}

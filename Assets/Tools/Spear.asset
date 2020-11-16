@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f40b95888c3c874f9d30e5a4f456a2e, type: 3}
   m_Name: Spear
   m_EditorClassIdentifier: 
-  sizeMin: 5
-  sizeMax: 10
-  unlocked: 0
+  sizeMin: 1
+  sizeMax: 5
+  unlocked: 1
   image: {fileID: 0}

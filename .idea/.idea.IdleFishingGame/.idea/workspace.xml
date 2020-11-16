@@ -27,24 +27,26 @@
     <list default="true" id="f90eca5f-eebd-435f-85f0-7c3036c09b58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishSetup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FisherPlacement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AutoFisherSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$1/Login.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/Register.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C86099A8-45D8-4352-831D-42392525F93D/0e/9f828281/BigInteger.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ClickForGold.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -57,6 +59,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatingFish.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605174107542</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adds Fish+ PopUp">
+      <created>1605266989871</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605266989871</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Correct Errors in FishSetup">
+      <created>1605528385147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605528385147</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,25 +163,31 @@
     <MESSAGE value="Adds FishUI FishSetup" />
     <MESSAGE value="Small Corrections" />
     <MESSAGE value="Adds Fish Texture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds Fish Texture" />
+    <MESSAGE value="Adds Fish+ PopUp" />
+    <MESSAGE value="Correct Errors in FishSetup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct Errors in FishSetup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605255476913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605255476913" />
-    <state x="184" y="86" key="MergeDialog" timestamp="1605172905349">
+    <state x="184" y="86" key="MergeDialog" timestamp="1605529913956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="MergeDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605172905349" />
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605529913956" />
     <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1605172905358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605172905358" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1605174113767">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1605528397985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605174113767" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605528397985" />
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605532204255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605532204255" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605170365300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

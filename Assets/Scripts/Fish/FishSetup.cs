@@ -3,24 +3,15 @@
 public class FishSetup : MonoBehaviour
 {
     public FishType[] Fishes;
+    public Tools[] Tools;
+
+    //perhaps move to a player script in future
+    public int currentTool;
     public FishUI prefab;
-
-    public string currentTool = "spear";
-
-
-
-    public void getFish(this.currentTool)
+    
+    public void getFish()
     {
-        int maxSize;
-        switch(tool){
-            case "spear":
-              maxSize = 1;
-              break;
-            case "rod":
-              maxSize = 2;
-              break;
-        }
-        var fish = Fishes[Random.Range(0, maxSize)];
+        var fish = Fishes[Random.Range(Tools[this.currentTool].sizeMin, Tools[this.currentTool].sizeMax)];
         var newFish = Instantiate(prefab, transform);
         newFish.transform.position = transform.position;
         newFish.setup(fish);

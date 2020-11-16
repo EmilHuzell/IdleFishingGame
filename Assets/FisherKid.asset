@@ -16,4 +16,4 @@ MonoBehaviour:
   BaseProduce: 1
   BaseCost: 20
   CostIncrease: 1.05
-  ProduceTime: 1
+  ProduceTime: 10

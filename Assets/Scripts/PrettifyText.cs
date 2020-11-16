@@ -64,6 +64,23 @@ public static class PrettifyText {
         return FormatDefault(goldText);
     }
 
+    public static string FormatModular(BigInteger gold, int decimalAmount)
+    {
+        var textAmount = Format(gold);
+        bool isLastCharNumber = char.IsDigit(textAmount[textAmount.Length - 1]);
+
+        if (!isLastCharNumber) {
+            textAmount = textAmount.Remove(textAmount.Length - 1);
+        }
+
+        if (textAmount.Length > 5) {
+            var final = textAmount.Remove(textAmount.LastIndexOf(".") + decimalAmount);
+            return final + Suffix(Converters.BigIntToString(gold));
+        }
+        
+        return textAmount;
+    }
+
     private static string FormatDefault(string currentGold) {
         var firstAmount = (currentGold.Length - 7) % 3 + 1;
         var firstString = currentGold.Substring(0, firstAmount);

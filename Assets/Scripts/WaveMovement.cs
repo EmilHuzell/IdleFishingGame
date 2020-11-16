@@ -38,7 +38,7 @@ public class WaveMovement : MonoBehaviour
         var x = Mathf.Cos(this.angle) * this.radius + this.center.x;
         var y = Mathf.Sin(this.angle) * this.radius + this.center.y;
 
-        WaveTransform.localPosition = new Vector3(x, y, 0);;
+        WaveTransform.localPosition = new Vector3(x, y, 0);
 
     }
     

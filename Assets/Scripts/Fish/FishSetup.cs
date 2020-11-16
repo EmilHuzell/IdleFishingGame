@@ -11,7 +11,6 @@ public class FishSetup : MonoBehaviour
     
     public void getFish()
     {
-  
         var fish = Fishes[Random.Range(Tools[this.currentTool].sizeMin, Tools[this.currentTool].sizeMax)];
         var newFish = Instantiate(prefab, transform);
         newFish.transform.position = transform.position;

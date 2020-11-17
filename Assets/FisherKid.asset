@@ -22,5 +22,5 @@ MonoBehaviour:
   upgrade:
     saveCode: AutoFisher_Upgrades
     amountEffect: 1
-    costIncrease: 1.05
-    baseCost: 10
+    costIncrease: 1.5
+    baseCost: 100

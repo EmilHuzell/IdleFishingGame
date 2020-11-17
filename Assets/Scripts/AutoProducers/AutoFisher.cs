@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Numerics;
 
-public class AutoFisher : MonoBehaviour
+public class AutoFisher : MonoBehaviour, IAscend
 {
     public AutoFisherType autoFisherType;
 
@@ -25,6 +25,11 @@ public class AutoFisher : MonoBehaviour
         this.autoFisherType = autoFisherType;
         UpdateUI();
         AddSleepProduction();
+    }
+    public void Ascend()
+    {
+        autoFisherType.Reset();
+        UpdateUI();
     }
 
     //Updates
@@ -74,7 +79,7 @@ public class AutoFisher : MonoBehaviour
     void UpdateUpgradeCostText()
     {
         if (upgradeCostText != null)
-            upgradeCostText.text = $"Costs: {autoFisherType.upgrade.CurrentCost}";
+            upgradeCostText.text = $"Upgrade Costs: {autoFisherType.upgrade.CurrentCost}";
     }
 
     //ON START

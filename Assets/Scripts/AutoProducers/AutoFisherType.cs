@@ -20,7 +20,7 @@ public class AutoFisherType : ScriptableObject
 
     public BigInteger CurrentProduction()
     {
-        return MathFunctions.MultiplyBigIntByFloat((BaseProduce * amount.amountEffect) * (upgrade.amountEffect + 1), Ascension.Multiplier);
+        return MathFunctions.MultiplyBigIntByFloat(BaseProduce, Ascension.Multiplier * amount.AmountEffect * (upgrade.AmountEffect + 1));
     }
     public void Reset()
     {

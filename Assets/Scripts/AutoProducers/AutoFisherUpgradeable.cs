@@ -13,9 +13,10 @@ public class AutoFisherUpgradeable
 
     public bool CanAfford { get => CurrentCost <= Gold.CurrentGold; }
 
-    public int amountEffect = 1;
+    public float AmountEffect { get => System.Int32.Parse(Amount.ToString()) * amountEffect; }
+    public float amountEffect = 1;
     [SerializeField] float costIncrease = 1.05f;
-    [SerializeField] int baseCost = 20; //BE AWARE! The upgrade value always rounds down. So basecost * costincrease ALWAYS have to result in basecost+1 or higher!!!
+    [SerializeField] int baseCost = 10;
 
     public bool Upgrade()
     {

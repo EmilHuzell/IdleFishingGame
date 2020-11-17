@@ -79,7 +79,7 @@ public class AutoFisher : MonoBehaviour, IAscend
     void UpdateUpgradeCostText()
     {
         if (upgradeCostText != null)
-            upgradeCostText.text = $"Costs: {autoFisherType.upgrade.CurrentCost}";
+            upgradeCostText.text = $"Upgrade Costs: {autoFisherType.upgrade.CurrentCost}";
     }
 
     //ON START

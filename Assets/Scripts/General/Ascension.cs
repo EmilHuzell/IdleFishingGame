@@ -10,9 +10,11 @@ public static class Ascension
 
     public static void Ascend()
     {
-        foreach (IAscend item in Object.FindObjectsOfType<Component>())
+        Debug.Log("Player ascended");
+        foreach (Component component in Object.FindObjectsOfType<Component>())
         {
-            item.Ascend();
+            if (component.GetType() is IAscend ascend)
+                ascend.Ascend();
         }
     }
 }

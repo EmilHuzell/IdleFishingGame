@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b099cffa1fe441147b338e80529d62cb, type: 3}
   m_Name: FisherKid
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
   BaseProduce: 1
-  BaseCost: 20
-  CostIncrease: 1.05
-  ProduceTime: 10
+  ProduceTime: 1
+  amount:
+    saveCode: AutoFisher_Amount
+    amountEffect: 1
+    costIncrease: 1.05
+    baseCost: 10
+  upgrade:
+    saveCode: AutoFisher_Upgrades
+    amountEffect: 1
+    costIncrease: 1.05
+    baseCost: 10

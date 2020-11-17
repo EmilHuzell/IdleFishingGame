@@ -2,6 +2,7 @@
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
 namespace Fish
@@ -11,14 +12,18 @@ namespace Fish
         private FishType fish;
         public RawImage fishImage;
         public Text fishWeight;
-        public Text button1;
-        public Text button2;
-        public Text button3;
+        public Button button1;
+        public Button button2;
+        public Button button3;
+        public Button button4;
         public Text marketText;
         private float marketPrice;
         public float maxPriceMultifier;
         public float updateInterval = 5;
         private float elapsedTime;
+        private int sellMultifier1 = 10;
+        private int sellMultifier2 = 100;
+        private int sellMultifier3 = 1000;
 
         private void Start()
         {
@@ -28,9 +33,10 @@ namespace Fish
         private void Update()
         {
             fishWeight.text = $"{fish.Weight}";
-            button1.text = $"X1";
-            button2.text = $"X10";
-            button3.text = $"100";
+            button1.GetComponentInChildren<Text>().text= $"X{sellMultifier1}";
+            button2.GetComponentInChildren<Text>().text= $"X{sellMultifier2}";
+            button3.GetComponentInChildren<Text>().text = $"X{sellMultifier3}";
+            button4.GetComponentInChildren<Text>().text = $"All";
             UpdatePrice();
         }
         
@@ -50,9 +56,29 @@ namespace Fish
             marketText.text = $"{marketPrice.ToString("F")} Gold/Kg";
         }
 
+        public void OnClicked(Button button)
+        {
+            switch (button.name)
+            {
+                case "SellButton1":
+                    sellFish(sellMultifier1);
+                    break;
+                case "SellButton2":
+                    sellFish(sellMultifier2);
+                    break;
+                case "SellButton3":
+                    sellFish(sellMultifier3);
+                    break;
+                case "SellButton4":
+                    sellFish(fish.Weight);
+                    break;
+                default:
+                    return;
+            }
+        }
         public void sellFish(int amount)
         {
-            if (fish.Weight > amount)
+            if (fish.Weight >= amount)
             {
                 fish.Weight -= amount;
                 Gold.AddGold(new BigInteger(amount * marketPrice));

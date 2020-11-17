@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 776bbc3012509124eac871a57c1e85b6, type: 3}
   m_Name: Perch
   m_EditorClassIdentifier: 
-  sizeMin: 50
-  sizeMax: 500
-  goldMultifier: 3
+  sizeMin: 5
+  sizeMax: 50
+  minPrice: 1
   image: {fileID: 2800000, guid: 8c0f2580a1972bf4c8a1a233cc440e08, type: 3}

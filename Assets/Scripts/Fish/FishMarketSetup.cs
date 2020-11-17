@@ -2,11 +2,11 @@
 
 namespace Fish
 {
-    public class FishStoreSetup : MonoBehaviour
+    public class FishMarketSetup : MonoBehaviour
     {
         public FishType[] fishes;
 
-        public FishStore prefab;
+        public FishMarket prefab;
 
         private void Start()
         {

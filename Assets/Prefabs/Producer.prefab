@@ -205,7 +205,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: -8647173245518523602}
         m_TargetAssemblyTypeName: AutoFisher, Assembly-CSharp
-        m_MethodName: Upgrade
+        m_MethodName: AddUnit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -249,9 +249,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoFisherType: {fileID: 0}
   timeInvested: 0
-  currentUpgradeCost: 
   producerName: {fileID: 2707590849121594801}
-  costText: {fileID: 221257042874412140}
+  unitCostText: {fileID: 221257042874412140}
+  upgradeCostText: {fileID: 0}
 --- !u!1 &6630377793692195044
 GameObject:
   m_ObjectHideFlags: 0

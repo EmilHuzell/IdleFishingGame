@@ -1,9 +1,6 @@
-﻿using System;
-using System.Numerics;
+﻿using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
-using Object = UnityEngine.Object;
-using Random = UnityEngine.Random;
 
 namespace Fish
 {
@@ -12,47 +9,55 @@ namespace Fish
         private FishType fish;
         public RawImage fishImage;
         public Text fishWeight;
-        public Button button1;
-        public Button button2;
-        public Button button3;
-        public Button button4;
+        public Button[] buttons;
         public Text marketText;
         private float marketPrice;
         public float maxPriceMultifier;
         public float updateInterval = 5;
         private float elapsedTime;
-        private int sellMultifier1 = 10;
-        private int sellMultifier2 = 100;
-        private int sellMultifier3 = 1000;
+        private readonly BigInteger[] sellAmount = {10, 100, 1000};
 
         private void Start()
         {
-            priceUI();
+            CalculatePrice();
+            ButtonUI();
         }
 
         private void Update()
         {
-            fishWeight.text = $"{fish.Weight}";
-            button1.GetComponentInChildren<Text>().text= $"X{sellMultifier1}";
-            button2.GetComponentInChildren<Text>().text= $"X{sellMultifier2}";
-            button3.GetComponentInChildren<Text>().text = $"X{sellMultifier3}";
-            button4.GetComponentInChildren<Text>().text = $"All";
+            fishWeight.text = PrettifyText.Format(fish.Weight);
+            ButtonUI();
             UpdatePrice();
         }
-        
+
         private void UpdatePrice()
         {
             elapsedTime += Time.deltaTime;
             if (elapsedTime >= updateInterval)
             {
-                priceUI();
+                CalculatePrice();
                 elapsedTime = 0;
             }
         }
 
-        private void priceUI()
+        private void ButtonUI()
         {
-            marketPrice = Random.Range(fish.minPrice,fish.minPrice*maxPriceMultifier);
+            for (var i = 0; i < 4; i++)
+                if (i != 3)
+                {
+                    buttons[i].GetComponentInChildren<Text>().text = $"Sell\nX{sellAmount[i]}";
+                    buttons[i].gameObject.active = fish.Weight >= sellAmount[i];
+                }
+                else
+                {
+                    buttons[i].GetComponentInChildren<Text>().text = "Sell\nAll";
+                    buttons[i].gameObject.active = fish.Weight != 0;
+                }
+        }
+
+        private void CalculatePrice()
+        {
+            marketPrice = Random.Range(fish.minPrice, fish.minPrice * maxPriceMultifier);
             marketText.text = $"{marketPrice.ToString("F")} Gold/Kg";
         }
 
@@ -61,13 +66,13 @@ namespace Fish
             switch (button.name)
             {
                 case "SellButton1":
-                    sellFish(sellMultifier1);
+                    sellFish(sellAmount[0]);
                     break;
                 case "SellButton2":
-                    sellFish(sellMultifier2);
+                    sellFish(sellAmount[1]);
                     break;
                 case "SellButton3":
-                    sellFish(sellMultifier3);
+                    sellFish(sellAmount[2]);
                     break;
                 case "SellButton4":
                     sellFish(fish.Weight);
@@ -76,19 +81,23 @@ namespace Fish
                     return;
             }
         }
-        public void sellFish(int amount)
+
+        public void sellFish(BigInteger amount)
         {
             if (fish.Weight >= amount)
             {
                 fish.Weight -= amount;
-                Gold.AddGold(new BigInteger(amount * marketPrice));
+                var dAmount = (double) amount;
+                var result = dAmount * marketPrice;
+                Gold.AddGold(new BigInteger(result));
             }
         }
+
         public void setup(FishType fishType)
         {
             gameObject.name = fishType.name;
             fish = fishType;
-            this.fishImage.texture = fishType.image;
+            fishImage.texture = fishType.image;
         }
     }
 }

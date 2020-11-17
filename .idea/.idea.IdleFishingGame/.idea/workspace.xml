@@ -25,12 +25,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90eca5f-eebd-435f-85f0-7c3036c09b58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fishes/Arowana.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fishes/Arowana.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fishes/Barred Knifejaw.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fishes/Barred Knifejaw.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fishes/Perch.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fishes/Perch.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FishStore.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FishStore.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,12 +41,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Forsbergs Projects/IdleFishingGame/Assets/Scripts/General/BoatMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Forsbergs Projects/IdleFishingGame/Assets/Scripts/General/BoatMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Forsbergs Projects/IdleFishingGame/Assets/Scripts/General/BoatMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C86099A8-45D8-4352-831D-42392525F93D/0e/9f828281/BigInteger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/GetFishSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$1/Login.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/Register.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Course/IdleFishingGame/Assets/Scripts/Fish/FishStore.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -74,9 +71,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tools.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/General/Gold.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" />
       </list>
     </option>
   </component>

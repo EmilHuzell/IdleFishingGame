@@ -42,11 +42,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$1/Login.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/Register.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C86099A8-45D8-4352-831D-42392525F93D/0e/9f828281/BigInteger.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -60,6 +56,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FishUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" />
       </list>
     </option>
   </component>
@@ -109,6 +106,7 @@
       <updated>1605168795602</updated>
       <workItem from="1605168800461" duration="1492000" />
       <workItem from="1605254791085" duration="4960000" />
+      <workItem from="1605600919226" duration="1520000" />
     </task>
     <task id="LOCAL-00001" summary="Adds FishUI FishSetup">
       <created>1605173857637</created>

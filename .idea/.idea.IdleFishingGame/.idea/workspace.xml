@@ -43,7 +43,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Forsbergs Projects/IdleFishingGame/Assets/Scripts/General/BoatMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Forsbergs Projects/IdleFishingGame/Assets/Scripts/General/BoatMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Forsbergs Projects/IdleFishingGame/Assets/Scripts/General/BoatMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -60,6 +64,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tools.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" />
       </list>
     </option>
   </component>
@@ -109,7 +114,7 @@
       <updated>1605168795602</updated>
       <workItem from="1605168800461" duration="1492000" />
       <workItem from="1605254791085" duration="4960000" />
-      <workItem from="1605600919226" duration="3826000" />
+      <workItem from="1605600919226" duration="9255000" />
     </task>
     <task id="LOCAL-00001" summary="Adds FishUI FishSetup">
       <created>1605173857637</created>
@@ -185,6 +190,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605528397985" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605610585862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1080.0.1080.1880/1920.0.1680.1010@0.0.1920.1040" timestamp="1605610585862" />
     <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605532204255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

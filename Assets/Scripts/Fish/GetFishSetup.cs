@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class FishSetup : MonoBehaviour
+public class GetFishSetup : MonoBehaviour
 {
     public FishType[] Fishes;
     public Tools[] Tools;
@@ -16,6 +16,6 @@ public class FishSetup : MonoBehaviour
         newFish.transform.position = transform.position;
         var size = Random.Range(fish.sizeMin, fish.sizeMax);
         newFish.setup(fish, size);
-        fish.Weight += newFish.size;
+        fish.Weight += size;
     }
 }

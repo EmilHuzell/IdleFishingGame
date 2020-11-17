@@ -15,9 +15,9 @@
           </e>
           <e p="Fish" t="Include">
             <e p="FishPopup.cs" t="Include" />
-            <e p="FishSetup.cs" t="Include" />
-            <e p="FishStoreUI.cs" t="Include" />
+            <e p="FishStore.cs" t="Include" />
             <e p="FishType.cs" t="Include" />
+            <e p="GetFishSetup.cs" t="Include" />
           </e>
           <e p="General" t="Include">
             <e p="ClickForGold.cs" t="Include" />

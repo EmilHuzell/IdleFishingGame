@@ -72,6 +72,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/General/Gold.cs" />
       </list>
     </option>
   </component>

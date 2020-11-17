@@ -25,8 +25,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90eca5f-eebd-435f-85f0-7c3036c09b58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Fishes/Perch.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fishes/Perch.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/FishPopup.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/FishPopup.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/FishStore.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/FishStore.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture/perch2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture/perch2.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fish.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fish.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishPopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishPopup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Net.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tools/Net.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Rod.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tools/Rod.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Spear.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tools/Spear.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +76,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatingFish.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishPopup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tools.cs" />
@@ -72,6 +96,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -139,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605528385147</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Fish Perch">
+      <created>1605532336302</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605532336302</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,13 +192,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Adds Fishtype scriptObject" />
     <MESSAGE value="Adds FishUI FishSetup" />
     <MESSAGE value="Small Corrections" />
     <MESSAGE value="Adds Fish Texture" />
     <MESSAGE value="Adds Fish+ PopUp" />
     <MESSAGE value="Correct Errors in FishSetup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct Errors in FishSetup" />
+    <MESSAGE value="Add Fish Perch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Fish Perch" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605255476913">
@@ -181,14 +215,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605172905358" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1605528397985">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1605532337699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605528397985" />
-    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605532204255">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605532337699" />
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605601204664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605532204255" />
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605601204664" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605170365300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

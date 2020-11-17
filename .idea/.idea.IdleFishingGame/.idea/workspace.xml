@@ -25,15 +25,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90eca5f-eebd-435f-85f0-7c3036c09b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-13_10_36__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-13_10_36__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-16_13_31__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-16_13_31__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FishStore.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FishStore.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +70,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tools.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" />
       </list>
     </option>
@@ -164,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605532336302</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Arrange FishStore UI">
+      <created>1605607630994</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605607630994</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +195,8 @@
     <MESSAGE value="Adds Fish+ PopUp" />
     <MESSAGE value="Correct Errors in FishSetup" />
     <MESSAGE value="Add Fish Perch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Fish Perch" />
+    <MESSAGE value="Arrange FishStore UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrange FishStore UI" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605255476913">

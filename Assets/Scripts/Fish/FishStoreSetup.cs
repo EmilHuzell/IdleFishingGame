@@ -16,5 +16,6 @@ namespace Fish
                 newfish.setup(fish);
             }
         }
+        
     }
 }

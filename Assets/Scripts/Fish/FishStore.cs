@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -49,6 +50,14 @@ namespace Fish
             marketText.text = $"{marketPrice.ToString("F")} Gold/Kg";
         }
 
+        public void sellFish(int amount)
+        {
+            if (fish.Weight > amount)
+            {
+                fish.Weight -= amount;
+                Gold.AddGold(new BigInteger(amount * marketPrice));
+            }
+        }
         public void setup(FishType fishType)
         {
             gameObject.name = fishType.name;

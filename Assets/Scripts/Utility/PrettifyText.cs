@@ -1,4 +1,6 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
+using System.Text;
 
 public static class PrettifyText {
     private static string Suffix(string currentGold) {
@@ -35,8 +37,24 @@ public static class PrettifyText {
             case 14:
                 return "qUA";
             default:
-                return "X";
+                return ProceduralSuffix(affix);
         }
+    }
+
+    private static string ProceduralSuffix(int affix) {
+        var value = affix - 14;
+        
+        var finalSuffix = new StringBuilder();
+            
+        do
+        {
+            value--;
+            value = Math.DivRem(value, 26, out var remainder);
+            finalSuffix.Insert(0, Convert.ToChar('A' + remainder));
+                
+        } while (value > 0);
+
+        return finalSuffix.ToString();
     }
 
     private static string FormatK(string currentGold) {

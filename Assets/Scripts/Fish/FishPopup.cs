@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class FishUI : MonoBehaviour
+public class FishPopup : MonoBehaviour
 {
     public Text type;
     public Text size;
     public RawImage rawImage;
-    private int fishSize;
     public Vector3 moveDirection = Vector3.up * 20f;
     public float alphaFadeSpeed = 0.2f;
     public float variation = 20f;
@@ -30,12 +29,11 @@ public class FishUI : MonoBehaviour
         size.color = color_Text;
         if (color_Image.a < 0f) Destroy(gameObject);
     }
-    public void setup(FishType fishType)
+    public void setup(FishType fishType, int size)
     {
         gameObject.name = fishType.name;
-        this.fishSize = Random.Range(fishType.sizeMin, fishType.sizeMax);
         this.type.text = $"{fishType.name}";
-        this.size.text = $"{fishSize}";
+        this.size.text = $"{size}";
         this.rawImage.texture = fishType.image;
     }
 }

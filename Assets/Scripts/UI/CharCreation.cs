@@ -8,11 +8,9 @@ using Object = UnityEngine.Object;
 public class CharCreation : MonoBehaviour {
 
     public InputField nameInput;
-
     public GameObject nameStage;
     public GameObject genderStage;
-
-    public Object whatSceneToGoToWhenCharacterIsDone;
+    
 
     private void Start() {
         genderStage.gameObject.SetActive(false);

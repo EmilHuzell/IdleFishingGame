@@ -8,12 +8,12 @@ namespace Fish
 
         private void Start()
         {
-            fishStoreUI.active = false;
+            fishStoreUI.SetActive(false);
         }
 
         public void showFishMarket()
         {
-            fishStoreUI.active = !fishStoreUI.active;
+            fishStoreUI.SetActive(!fishStoreUI.activeSelf);
         }
     }
 }

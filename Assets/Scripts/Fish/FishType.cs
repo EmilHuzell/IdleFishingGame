@@ -14,5 +14,10 @@ public class FishType : ScriptableObject
         get => SaveMethods.LoadValue($"{name}", "0");
         set => SaveMethods.SaveValue($"{name}", value);
     }
+    
+    public void Reset()
+    {
+        Weight = 0;
+    }
 }
 

@@ -16,9 +16,9 @@
             <e p="AutoFisherUpgradeable.cs" t="Include" />
           </e>
           <e p="Fish" t="Include">
+            <e p="FishMarket.cs" t="Include" />
+            <e p="FishMarketSetup.cs" t="Include" />
             <e p="FishPopup.cs" t="Include" />
-            <e p="FishStore.cs" t="Include" />
-            <e p="FishStoreSetup.cs" t="Include" />
             <e p="FishType.cs" t="Include" />
             <e p="GetFishSetup.cs" t="Include" />
             <e p="ShowFishMarket.cs" t="Include" />
@@ -26,6 +26,7 @@
           <e p="General" t="Include">
             <e p="Ascension.cs" t="Include" />
             <e p="BoatMovement.cs" t="Include" />
+            <e p="BoatSpawner.cs" t="Include" />
             <e p="ClickForGold.cs" t="Include" />
             <e p="Gold.cs" t="Include" />
             <e p="WaveMovement.cs" t="Include" />

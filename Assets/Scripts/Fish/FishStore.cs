@@ -1,8 +1,6 @@
-﻿using System;
-using System.Numerics;
+﻿using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 namespace Fish
 {
@@ -17,7 +15,7 @@ namespace Fish
         public float maxPriceMultifier;
         public float updateInterval = 5;
         private float elapsedTime;
-        private BigInteger[] sellAmount = {10,100,1000};
+        private readonly BigInteger[] sellAmount = {10, 100, 1000};
 
         private void Start()
         {
@@ -31,7 +29,7 @@ namespace Fish
             ButtonUI();
             UpdatePrice();
         }
-        
+
         private void UpdatePrice()
         {
             elapsedTime += Time.deltaTime;
@@ -44,8 +42,7 @@ namespace Fish
 
         private void ButtonUI()
         {
-            for (int i = 0; i < 4; i++)
-            {
+            for (var i = 0; i < 4; i++)
                 if (i != 3)
                 {
                     buttons[i].GetComponentInChildren<Text>().text = $"Sell\nX{sellAmount[i]}";
@@ -53,17 +50,14 @@ namespace Fish
                 }
                 else
                 {
-                    buttons[i].GetComponentInChildren<Text>().text = $"Sell\nAll";
+                    buttons[i].GetComponentInChildren<Text>().text = "Sell\nAll";
                     buttons[i].gameObject.active = fish.Weight != 0;
                 }
-
-
-            }
         }
-        
+
         private void CalculatePrice()
         {
-        marketPrice = Random.Range(fish.minPrice,fish.minPrice*maxPriceMultifier);
+            marketPrice = Random.Range(fish.minPrice, fish.minPrice * maxPriceMultifier);
             marketText.text = $"{marketPrice.ToString("F")} Gold/Kg";
         }
 
@@ -87,21 +81,23 @@ namespace Fish
                     return;
             }
         }
+
         public void sellFish(BigInteger amount)
         {
             if (fish.Weight >= amount)
             {
                 fish.Weight -= amount;
-                double dAmount = (double) amount;
-                double result = dAmount * marketPrice;
+                var dAmount = (double) amount;
+                var result = dAmount * marketPrice;
                 Gold.AddGold(new BigInteger(result));
             }
         }
+
         public void setup(FishType fishType)
         {
             gameObject.name = fishType.name;
             fish = fishType;
-            this.fishImage.texture = fishType.image;
+            fishImage.texture = fishType.image;
         }
     }
 }

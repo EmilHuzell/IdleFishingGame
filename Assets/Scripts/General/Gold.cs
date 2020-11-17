@@ -1,6 +1,5 @@
 ﻿using System.Numerics;
-using UnityEngine;
-public class Gold : MonoBehaviour
+public static class Gold
 {
     public static BigInteger CurrentGold { get => SaveMethods.LoadValue("Gold"); set => SaveMethods.SaveValue("Gold", value); }
 

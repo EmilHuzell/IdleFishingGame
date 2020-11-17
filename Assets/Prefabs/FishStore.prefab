@@ -210,7 +210,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: X10
+  m_Text: 'Sell
+
+    X10'
 --- !u!1 &1826381716161588901
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,10 +562,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishImage: {fileID: 2466336477970565219}
   fishWeight: {fileID: 9200918066128655194}
-  button1: {fileID: 8861990934377766249}
-  button2: {fileID: 6243909577531938165}
-  button3: {fileID: 4549306196826224309}
-  button4: {fileID: 8584450371136137446}
+  buttons:
+  - {fileID: 8861990934377766249}
+  - {fileID: 6243909577531938165}
+  - {fileID: 4549306196826224309}
+  - {fileID: 8584450371136137446}
   marketText: {fileID: 4027913111529975566}
   maxPriceMultifier: 5
   updateInterval: 5

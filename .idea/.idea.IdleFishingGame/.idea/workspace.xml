@@ -25,7 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90eca5f-eebd-435f-85f0-7c3036c09b58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/ShowFishMarket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/ShowFishMarket.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,9 @@
   <component name="Git.Pull.Settings">
     <option name="BRANCH" value="main" />
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -42,6 +48,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Course/IdleFishingGame/Assets/Scripts/Fish/FishStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C86099A8-45D8-4352-831D-42392525F93D/0e/9f828281/BigInteger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/GetFishSetup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$1/Login.cs" root0="SKIP_HIGHLIGHTING" />
@@ -73,6 +80,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/ShowFishMarket.cs" />
       </list>
     </option>
   </component>
@@ -174,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605608521501</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Small Corrections">
+      <created>1605619388769</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605619388769</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,14 +213,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Adds Fishtype scriptObject" />
     <MESSAGE value="Adds FishUI FishSetup" />
-    <MESSAGE value="Small Corrections" />
     <MESSAGE value="Adds Fish Texture" />
     <MESSAGE value="Adds Fish+ PopUp" />
     <MESSAGE value="Correct Errors in FishSetup" />
     <MESSAGE value="Add Fish Perch" />
     <MESSAGE value="Arrange FishStore UI" />
     <MESSAGE value="Add sell Fish Script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sell Fish Script" />
+    <MESSAGE value="Small Corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small Corrections" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605255476913">
@@ -224,10 +239,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605608690744" />
-    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605608527750">
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605621098255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605608527750" />
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605621098255" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605170365300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

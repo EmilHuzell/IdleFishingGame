@@ -21,6 +21,7 @@
             <e p="FishStoreSetup.cs" t="Include" />
             <e p="FishType.cs" t="Include" />
             <e p="GetFishSetup.cs" t="Include" />
+            <e p="ShowFishMarket.cs" t="Include" />
           </e>
           <e p="General" t="Include">
             <e p="Ascension.cs" t="Include" />
@@ -31,6 +32,7 @@
           </e>
           <e p="Tools.cs" t="Include" />
           <e p="UI" t="Include">
+            <e p="AscensionUI.cs" t="Include" />
             <e p="CharCreation.cs" t="Include" />
             <e p="CurrentGoldToText.cs" t="Include" />
             <e p="ToolsUI.cs" t="Include" />

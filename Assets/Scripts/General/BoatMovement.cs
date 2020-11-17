@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 public class BoatMovement : MonoBehaviour {
     
@@ -11,14 +9,10 @@ public class BoatMovement : MonoBehaviour {
     public float bobAmount;
     public float bobSpeed;
     
-    private float _timePassed;
     private float _x;
     private float _y;
 
-    private RectTransform _transform;
-
     private void Awake() {
-        _transform = GetComponent<RectTransform>();
         var getRandomBoatSprite = boatImages[Random.Range(0, boatImages.Count())];
         this.GetComponent<Image>().sprite = getRandomBoatSprite;
     }

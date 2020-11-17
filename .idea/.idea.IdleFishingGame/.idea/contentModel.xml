@@ -33,6 +33,7 @@
             <e p="Converters.cs" t="Include" />
             <e p="MathFunctions.cs" t="Include" />
             <e p="PrettifyText.cs" t="Include" />
+            <e p="PrintAllPlayerPrefs.cs" t="Include" />
             <e p="SaveMethods.cs" t="Include" />
             <e p="SystemTime.cs" t="Include" />
           </e>

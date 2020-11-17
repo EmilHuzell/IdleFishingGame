@@ -41,6 +41,7 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -57,6 +58,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FishSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tools.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" />
       </list>
     </option>
   </component>
@@ -106,7 +109,7 @@
       <updated>1605168795602</updated>
       <workItem from="1605168800461" duration="1492000" />
       <workItem from="1605254791085" duration="4960000" />
-      <workItem from="1605600919226" duration="1520000" />
+      <workItem from="1605600919226" duration="3106000" />
     </task>
     <task id="LOCAL-00001" summary="Adds FishUI FishSetup">
       <created>1605173857637</created>

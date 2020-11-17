@@ -17,7 +17,7 @@ namespace Fish
         public float maxPriceMultifier;
         public float updateInterval = 5;
         private float elapsedTime;
-        private int[] sellAmount = {10,100,1000};
+        private BigInteger[] sellAmount = {10,100,1000};
 
         private void Start()
         {
@@ -27,7 +27,7 @@ namespace Fish
 
         private void Update()
         {
-            fishWeight.text = $"{fish.Weight}";
+            fishWeight.text = PrettifyText.Format(fish.Weight);
             ButtonUI();
             UpdatePrice();
         }
@@ -87,12 +87,14 @@ namespace Fish
                     return;
             }
         }
-        public void sellFish(int amount)
+        public void sellFish(BigInteger amount)
         {
             if (fish.Weight >= amount)
             {
                 fish.Weight -= amount;
-                Gold.AddGold(new BigInteger(amount * marketPrice));
+                double dAmount = (double) amount;
+                double result = dAmount * marketPrice;
+                Gold.AddGold(new BigInteger(result));
             }
         }
         public void setup(FishType fishType)

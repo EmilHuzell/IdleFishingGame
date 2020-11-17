@@ -2,6 +2,8 @@
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
+
 public class BoatMovement : MonoBehaviour {
     
     public List<Sprite> boatImages;
@@ -18,9 +20,20 @@ public class BoatMovement : MonoBehaviour {
     }
 
     private void FixedUpdate() {
+        Move();
+    }
+    
+    private void Move() {
         _x += 0.001f * movementSpeed;
         _y = Mathf.Lerp(-bobAmount * 0.2f, bobAmount * 0.2f, Mathf.PingPong(Time.time * bobSpeed * 0.4f, 1));
-        
         transform.localPosition += new Vector3(_x, _y);
+        
+        if (!IsVisible()) {
+            DestroyImmediate(this.gameObject);
+        }
+    }
+
+    private bool IsVisible() {
+        return !(this.transform.localPosition.x > 500f);
     }
 }

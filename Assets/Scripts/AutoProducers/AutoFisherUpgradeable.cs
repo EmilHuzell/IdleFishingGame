@@ -4,7 +4,7 @@ using System.Numerics;
 using UnityEngine;
 
 [System.Serializable]
-public class AutoFisherUpgradeable //Rename? Upgradeable?
+public class AutoFisherUpgradeable
 {
     public string saveCode;
 
@@ -26,5 +26,11 @@ public class AutoFisherUpgradeable //Rename? Upgradeable?
             return true;
         }
         return false;
+    }
+
+    public void Reset()
+    {
+        Debug.Log("DidAReset");
+        Amount = 0;
     }
 }

@@ -15,12 +15,16 @@ public class AutoFisherType : ScriptableObject
     public BigInteger Amount { get => amount.Amount; }
     public BigInteger Upgrades { get => upgrade.Amount; }
 
-    //public BigInteger CurrentCost { get => SaveMethods.LoadValue($"{name}_Cost", BaseCost.ToString()); set => SaveMethods.SaveValue($"{name}_Cost", value); }
     public BigInteger UpgradeCost { get => upgrade.CurrentCost; }
     public BigInteger UnitCost { get => amount.CurrentCost; }
 
     public BigInteger CurrentProduction()
     {
-        return (BaseProduce * amount.amountEffect) * (upgrade.amountEffect + 1);
+        return MathFunctions.MultiplyBigIntByFloat((BaseProduce * amount.amountEffect) * (upgrade.amountEffect + 1), Ascension.Multiplier);
+    }
+    public void Reset()
+    {
+        amount.Reset();
+        upgrade.Reset();
     }
 }

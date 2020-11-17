@@ -11,10 +11,14 @@ public static class Ascension
     public static void Ascend()
     {
         Debug.Log("Player ascended");
-        foreach (Component component in Object.FindObjectsOfType<Component>())
+        Gold.CurrentGold = 0;
+        foreach (GameObject gameObject in GameObject.FindObjectsOfType<GameObject>())
         {
-            if (component.GetType() is IAscend ascend)
+            foreach (IAscend ascend in gameObject.GetComponents<IAscend>())
+            {
+                Debug.Log("Cleared");
                 ascend.Ascend();
+            }
         }
     }
 }

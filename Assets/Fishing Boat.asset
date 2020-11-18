@@ -10,10 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b099cffa1fe441147b338e80529d62cb, type: 3}
-  m_Name: FisherKid
+  m_Name: Fishing Boat
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
   BaseProduce: 1
-  BaseCost: 20
-  CostIncrease: 1.05
-  ProduceTime: 10
+  ProduceTime: 1
+  amount:
+    saveCode: FishingBoat_Amount
+    amountEffect: 1
+    costIncrease: 1.05
+    baseCost: 10
+  upgrade:
+    saveCode: FishingBoat_Upgrades
+    amountEffect: 1
+    costIncrease: 1.5
+    baseCost: 100

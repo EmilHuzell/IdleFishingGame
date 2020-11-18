@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Numerics;
 
-public class AutoFisher : MonoBehaviour
+public class AutoFisher : MonoBehaviour, IAscend
 {
     public AutoFisherType autoFisherType;
 
@@ -20,19 +20,27 @@ public class AutoFisher : MonoBehaviour
     public bool CanAffordUnit { get => autoFisherType.amount.CanAfford; }
     public bool CanAffordUpgrade { get => autoFisherType.upgrade.CanAfford; }
 
-    public void Setup(AutoFisherType autoFisherType)
+    public void Start()
     {
-        this.autoFisherType = autoFisherType;
         UpdateUI();
         AddSleepProduction();
     }
+    public void Setup(AutoFisherType autoFisherType)
+    {
+        this.autoFisherType = autoFisherType;
+    }
+    public void Ascend()
+    {
+        autoFisherType.Reset();
+        UpdateUI();
+    }
 
     //Updates
-    void Update() //Works as intended
+    void Update() 
     {
         Produce();
     }
-    void Produce() //Revamp
+    void Produce() 
     {
         timeInvested += Time.deltaTime;
         if (timeInvested > autoFisherType.ProduceTime)
@@ -74,11 +82,11 @@ public class AutoFisher : MonoBehaviour
     void UpdateUpgradeCostText()
     {
         if (upgradeCostText != null)
-            upgradeCostText.text = $"Costs: {autoFisherType.upgrade.CurrentCost}";
+            upgradeCostText.text = $"Upgrade Costs: {autoFisherType.upgrade.CurrentCost}";
     }
 
     //ON START
-    void AddSleepProduction() //Make gold take upgrades into consideration
+    void AddSleepProduction()
     {
         Gold.AddGold(autoFisherType.CurrentProduction() * Converters.DoubleToBigInt(SystemTime.difference.TotalSeconds * 0.25f));
         //Debug.Log(SystemTime.difference.TotalSeconds);

@@ -25,13 +25,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90eca5f-eebd-435f-85f0-7c3036c09b58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fishes/Arowana.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fishes/Arowana.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fishes/Barred Knifejaw.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fishes/Barred Knifejaw.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fishes/Perch.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fishes/Perch.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FishStore.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FishStore.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarket.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarketSetup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarketSetup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/ShowFishMarket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/ShowFishMarket.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,18 +42,25 @@
   <component name="Git.Pull.Settings">
     <option name="BRANCH" value="main" />
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Forsbergs Projects/IdleFishingGame/Assets/Scripts/General/BoatMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Forsbergs Projects/IdleFishingGame/Assets/Scripts/General/BoatMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Forsbergs Projects/IdleFishingGame/Assets/Scripts/General/BoatMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Course/IdleFishingGame/Assets/Scripts/Fish/FishStore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C86099A8-45D8-4352-831D-42392525F93D/0e/9f828281/BigInteger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/GetFishSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$1/Login.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/Register.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Course/IdleFishingGame/Assets/Scripts/Fish/FishStore.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -68,14 +76,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishPopup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tools.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/ShowFishMarket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarketSetup.cs" />
       </list>
     </option>
   </component>
@@ -177,7 +188,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605608521501</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Small Corrections">
+      <created>1605619388769</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605619388769</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add show Fish Market button">
+      <created>1605621858190</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605621858190</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add fish related functions to Mainscene">
+      <created>1605625281603</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605625281603</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,14 +233,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Adds Fishtype scriptObject" />
     <MESSAGE value="Adds FishUI FishSetup" />
-    <MESSAGE value="Small Corrections" />
     <MESSAGE value="Adds Fish Texture" />
     <MESSAGE value="Adds Fish+ PopUp" />
     <MESSAGE value="Correct Errors in FishSetup" />
     <MESSAGE value="Add Fish Perch" />
     <MESSAGE value="Arrange FishStore UI" />
     <MESSAGE value="Add sell Fish Script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sell Fish Script" />
+    <MESSAGE value="Small Corrections" />
+    <MESSAGE value="Add show Fish Market button" />
+    <MESSAGE value="add fish related functions to Mainscene" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fish related functions to Mainscene" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605255476913">
@@ -223,14 +257,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605606642250" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1605608690745">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1605625287193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605608690744" />
-    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605608527750">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605625287193" />
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605630481144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605608527750" />
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605630481144" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605170365300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

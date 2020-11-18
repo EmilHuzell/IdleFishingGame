@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Perch
   m_EditorClassIdentifier: 
   sizeMin: 5
-  sizeMax: 50
+  sizeMax: 25
   minPrice: 1
   image: {fileID: 2800000, guid: 8c0f2580a1972bf4c8a1a233cc440e08, type: 3}

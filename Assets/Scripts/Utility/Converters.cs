@@ -38,7 +38,4 @@ public static class Converters {
     {
         return (double) bigIntegerToConvert;
     }
-    
-    
-    
 }

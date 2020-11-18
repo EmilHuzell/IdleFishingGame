@@ -43,24 +43,20 @@ public static class PrettifyText {
 
     private static string ProceduralSuffix(int affix) {
         var value = affix - 14;
-        
         var finalSuffix = new StringBuilder();
-            
+        
         do
         {
             value--;
             value = Math.DivRem(value, 26, out var remainder);
             finalSuffix.Insert(0, Convert.ToChar('A' + remainder));
-                
         } while (value > 0);
-
         return finalSuffix.ToString();
     }
 
     private static string FormatK(string currentGold) {
         var first = currentGold.Substring(0, currentGold.Length - 3);
         var decimals = currentGold.Substring(currentGold.Length - 3);
-
         return FormatString(first, decimals, "K");
     }
 
@@ -78,7 +74,6 @@ public static class PrettifyText {
         if (goldText.Length < 7) {
             return FormatK(goldText);
         }
-
         return FormatDefault(goldText);
     }
 
@@ -95,7 +90,6 @@ public static class PrettifyText {
             var final = textAmount.Remove(textAmount.LastIndexOf(".") + decimalAmount);
             return final + Suffix(Converters.BigIntToString(gold));
         }
-        
         return textAmount;
     }
 
@@ -103,7 +97,6 @@ public static class PrettifyText {
         var firstAmount = (currentGold.Length - 7) % 3 + 1;
         var firstString = currentGold.Substring(0, firstAmount);
         var decimals = currentGold.Substring(firstAmount, 3);
-
         return FormatString(firstString, decimals, Suffix(currentGold));
     }
 }

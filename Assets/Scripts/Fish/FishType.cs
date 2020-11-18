@@ -1,19 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Numerics;
 using UnityEngine;
-using UnityEngine.UI;
 
 [CreateAssetMenu]
-public class FishType : ScriptableObject {
+public class FishType : ScriptableObject
+{
     public int sizeMin = 5;
     public int sizeMax = 10;
     public float minPrice = 2;
     public Texture image;
-    
-    public int Weight
+
+    public BigInteger Weight
     {
-        get => PlayerPrefs.GetInt($"{name}", 0);
-        set => PlayerPrefs.SetInt($"{name}", value);
+        get => SaveMethods.LoadValue($"{name}", "0");
+        set => SaveMethods.SaveValue($"{name}", value);
+    }
+    
+    public void Reset()
+    {
+        Weight = 0;
     }
 }
 

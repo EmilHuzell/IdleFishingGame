@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6059698207805516585
+--- !u!1 &4439295241537028013
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6059698207805516584}
-  - component: {fileID: 6059698207805516589}
-  - component: {fileID: 6059698207805516586}
-  - component: {fileID: 6059698207805516587}
+  - component: {fileID: 4439295240871364318}
+  - component: {fileID: 4439295241537028010}
+  - component: {fileID: 4439295241537028011}
+  - component: {fileID: 4439295241537028012}
   m_Layer: 5
   m_Name: BoatPrefab
   m_TagString: Untagged
@@ -19,13 +19,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6059698207805516584
+--- !u!224 &4439295240871364318
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6059698207805516585}
+  m_GameObject: {fileID: 4439295241537028013}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 293.47205}
   m_LocalScale: {x: 1.4845, y: 1.4845, z: 1.4845}
@@ -35,24 +35,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196.43713, y: 100}
+  m_AnchoredPosition: {x: -507, y: 110}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6059698207805516589
+--- !u!222 &4439295241537028010
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6059698207805516585}
+  m_GameObject: {fileID: 4439295241537028013}
   m_CullTransparentMesh: 0
---- !u!114 &6059698207805516586
+--- !u!114 &4439295241537028011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6059698207805516585}
+  m_GameObject: {fileID: 4439295241537028013}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -76,13 +76,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6059698207805516587
+--- !u!114 &4439295241537028012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6059698207805516585}
+  m_GameObject: {fileID: 4439295241537028013}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c914f2a5d8ec6f6448e64d77c62c6bbd, type: 3}
@@ -92,6 +92,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 56af1c8deae913145b47e0249cdfbfef, type: 3}
   - {fileID: 21300000, guid: 905b385d3c5b9224b98294e35fc1dbe9, type: 3}
   - {fileID: 21300000, guid: b4ba548a4885e2a45a0ff1bad0561767, type: 3}
+  shouldTilt: 1
+  rotationAmount: 1
   movementSpeed: 1
   bobAmount: 1
   bobSpeed: 1

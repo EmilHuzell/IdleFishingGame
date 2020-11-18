@@ -1525,7 +1525,7 @@ MonoBehaviour:
   netBoatSize: 0.3
   rodBoatSize: 0.3
   harpoonBoatSize: 0.3
-  netBoatYLayer2: -0.11
+  netBoatYLayer2: -1.1
   netBoatYLayer3: 0.71
   netBoatYLayer4: 1.51
   rodBoatYLayer2: -1.46

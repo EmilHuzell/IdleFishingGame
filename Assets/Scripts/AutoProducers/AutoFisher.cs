@@ -10,12 +10,14 @@ public class AutoFisher : MonoBehaviour, IAscend
 
     public float timeInvested;
 
+    public Sprite icon;
+    public Image buttonIcon;
     public Text producerName;
     public Text unitCostText;
     public Text upgradeCostText;
-
-    public int FisherAmount { get => PlayerPrefs.GetInt($"{autoFisherType.name}_Amount", 0); set => PlayerPrefs.SetInt($"{autoFisherType.name}_Amount", value); }
-    public int UpgradeAmount { get => PlayerPrefs.GetInt($"{autoFisherType.name}_Upgrades", 0); set => PlayerPrefs.SetInt($"{autoFisherType.name}_Upgrades", value); }
+    public Text unitAmountText;
+    public Button addUnitButton;
+    public Button upgradeButton;
 
     public bool CanAffordUnit { get => autoFisherType.amount.CanAfford; }
     public bool CanAffordUpgrade { get => autoFisherType.upgrade.CanAfford; }
@@ -24,6 +26,14 @@ public class AutoFisher : MonoBehaviour, IAscend
     {
         UpdateUI();
         AddSleepProduction();
+        if (addUnitButton != null)
+        {
+            addUnitButton.onClick.AddListener(delegate { AddUnit(); });
+        }
+        if (upgradeButton != null)
+        {
+            upgradeButton.onClick.AddListener(delegate { AddUpgrade(); });
+        }
     }
     public void Setup(AutoFisherType autoFisherType)
     {
@@ -54,12 +64,12 @@ public class AutoFisher : MonoBehaviour, IAscend
     public void AddUnit()
     {
         autoFisherType.amount.Upgrade();
-        UpdateUnitCostText();
+        UpdateUI();
     }
     public void AddUpgrade()
     {
         autoFisherType.upgrade.Upgrade();
-        UpdateUpgradeCostText();
+        UpdateUI();
     }
 
     //UI
@@ -68,6 +78,8 @@ public class AutoFisher : MonoBehaviour, IAscend
         UpdateName(); //<- Aware that this only needs to be called once when doing the setup.
         UpdateUnitCostText();
         UpdateUpgradeCostText();
+        UpdateUnitAmountText();
+        UpdateSprite();
     }
     void UpdateName()
     {
@@ -82,7 +94,17 @@ public class AutoFisher : MonoBehaviour, IAscend
     void UpdateUpgradeCostText()
     {
         if (upgradeCostText != null)
-            upgradeCostText.text = $"Upgrade Costs: {autoFisherType.upgrade.CurrentCost}";
+            upgradeCostText.text = $"Costs: {autoFisherType.upgrade.CurrentCost}";
+    }
+    void UpdateUnitAmountText()
+    {
+        if (unitAmountText != null)
+            unitAmountText.text = autoFisherType.Amount.ToString();
+    }
+    void UpdateSprite()
+    {
+        if(buttonIcon != null && icon != null)
+            buttonIcon.sprite = icon;
     }
 
     //ON START

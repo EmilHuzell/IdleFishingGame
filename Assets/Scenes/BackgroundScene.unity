@@ -1070,55 +1070,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1485159581
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1485159583}
-  - component: {fileID: 1485159582}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1485159582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485159581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3de6951b792fc0948be0be95eab50e70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intervalBetweenSpawns: 0
-  maxYvariation: 0
-  minYvariation: 0
-  boatPrefab: {fileID: 3460510930846000869, guid: 035b0320824b5664f925cd0f573cc5d3,
-    type: 3}
-  waves: {fileID: 509439841}
---- !u!4 &1485159583
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485159581}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.07, y: -0.05, z: -2.361613}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1503982112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,11 +1520,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intervalBetweenSpawns: 5
-  maxYvariation: 1
-  minYvariation: -1
   boatPrefab: {fileID: 4439295241537028013, guid: 7f2c929a163c7eb49b616beb6f6cee01,
     type: 3}
-  waves: {fileID: 1503982112}
+  netBoatSize: 0.3
+  rodBoatSize: 0.3
+  harpoonBoatSize: 0.3
+  netBoatYLayer2: 0
+  netBoatYLayer3: 0
+  netBoatYLayer4: 0
+  rodBoatYLayer2: 0
+  rodBoatYLayer3: 0
+  rodBoatYLayer4: 0
+  harpoonBoatYLayer2: 0
+  harpoonBoatYLayer3: 0
+  harpoonBoatYLayer4: 0
 --- !u!4 &1926908258
 Transform:
   m_ObjectHideFlags: 0
@@ -1967,72 +1927,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &509362881504087807
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.0554796
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5475079
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -108.72295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686142378283282942, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3460510930846000869, guid: 035b0320824b5664f925cd0f573cc5d3,
-        type: 3}
-      propertyPath: m_Name
-      value: SceneBoatPrefab
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 035b0320824b5664f925cd0f573cc5d3, type: 3}

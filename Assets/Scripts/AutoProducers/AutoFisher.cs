@@ -20,11 +20,14 @@ public class AutoFisher : MonoBehaviour, IAscend
     public bool CanAffordUnit { get => autoFisherType.amount.CanAfford; }
     public bool CanAffordUpgrade { get => autoFisherType.upgrade.CanAfford; }
 
+    public void Start()
+    {
+        UpdateUI();
+        AddSleepProduction();
+    }
     public void Setup(AutoFisherType autoFisherType)
     {
         this.autoFisherType = autoFisherType;
-        UpdateUI();
-        AddSleepProduction();
     }
     public void Ascend()
     {
@@ -33,11 +36,11 @@ public class AutoFisher : MonoBehaviour, IAscend
     }
 
     //Updates
-    void Update() //Works as intended
+    void Update() 
     {
         Produce();
     }
-    void Produce() //Revamp
+    void Produce() 
     {
         timeInvested += Time.deltaTime;
         if (timeInvested > autoFisherType.ProduceTime)
@@ -83,7 +86,7 @@ public class AutoFisher : MonoBehaviour, IAscend
     }
 
     //ON START
-    void AddSleepProduction() //Make gold take upgrades into consideration
+    void AddSleepProduction()
     {
         Gold.AddGold(autoFisherType.CurrentProduction() * Converters.DoubleToBigInt(SystemTime.difference.TotalSeconds * 0.25f));
         //Debug.Log(SystemTime.difference.TotalSeconds);

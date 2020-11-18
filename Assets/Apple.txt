@@ -1,1 +1,6 @@
 LEIF WAS HERE
+
+(Bug) Fish button is acting strange
+(Suggestion) Make the fish appear at the mouse position
+(Art Suggestion) Make the buttons reach the edges of the canvas (Would make it easier to use in unity, Could even be just a copy if you want to keep it editable)
+(Question) Shall i hide the producers under the top left menu. Can be done in 5 min.

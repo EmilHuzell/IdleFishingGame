@@ -10,16 +10,15 @@ public static class Ascension
 
     public static void Ascend()
     {
-        Debug.Log("Player ascended");
         Gold.CurrentGold = 0;
         foreach (GameObject gameObject in GameObject.FindObjectsOfType<GameObject>())
         {
             foreach (IAscend ascend in gameObject.GetComponents<IAscend>())
             {
-                Debug.Log("Cleared");
                 ascend.Ascend();
             }
         }
+        Amount++;
     }
 }
 public interface IAscend

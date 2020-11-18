@@ -49,12 +49,13 @@ namespace Fish
                 if (i != 3)
                 {
                     buttons[i].GetComponentInChildren<Text>().text = $"Sell\nX{sellAmount[i]}";
-                    buttons[i].gameObject.active = fish.Weight >= sellAmount[i];
+                    // buttons[i].gameObject.active = fish.Weight >= sellAmount[i];
+                    buttons[i].gameObject.SetActive(fish.Weight >= sellAmount[i]);
                 }
                 else
                 {
-                    buttons[i].GetComponentInChildren<Text>().text = "Sell\nAll";
-                    buttons[i].gameObject.active = fish.Weight != 0;
+                    // buttons[i].GetComponentInChildren<Text>().text = "Sell\nAll";
+                    buttons[i].gameObject.SetActive(fish.Weight != 0);
                 }
         }
 

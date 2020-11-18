@@ -25,14 +25,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90eca5f-eebd-435f-85f0-7c3036c09b58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/FishMarket.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/FishMarket.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarket.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarketSetup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarketSetup.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FishStore.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FishStore.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/ShowFishMarket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/ShowFishMarket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Net.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tools/Net.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Rod.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tools/Rod.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Spear.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tools/Spear.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +58,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Course/IdleFishingGame/Assets/Scripts/Fish/FishStore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C86099A8-45D8-4352-831D-42392525F93D/0e/9f828281/BigInteger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/GetFishSetup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$1/Login.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/Register.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Course/IdleFishingGame/Assets/Scripts/Fish/FishStore.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -80,13 +85,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tools.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/ShowFishMarket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarketSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishMarket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/ShowFishMarket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" />
       </list>
     </option>
   </component>
@@ -209,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605625281603</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add IAscend interface to FishMarket">
+      <created>1605630543633</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605630543633</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +254,8 @@
     <MESSAGE value="Small Corrections" />
     <MESSAGE value="Add show Fish Market button" />
     <MESSAGE value="add fish related functions to Mainscene" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fish related functions to Mainscene" />
+    <MESSAGE value="Add IAscend interface to FishMarket" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add IAscend interface to FishMarket" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605255476913">
@@ -257,14 +270,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605606642250" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1605625287193">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1605630545665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605625287193" />
-    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605630481144">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605630545665" />
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605708053816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605630481144" />
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605708053816" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605170365300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

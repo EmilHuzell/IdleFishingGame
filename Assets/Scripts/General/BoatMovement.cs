@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class BoatMovement : MonoBehaviour {
     
@@ -11,10 +13,6 @@ public class BoatMovement : MonoBehaviour {
     public float movementSpeed;
     public float bobAmount;
     public float bobSpeed;
-    
-    
-    private float _x;
-    private float _y;
 
     private void Awake() {
         //Random start tilt doesn't work
@@ -27,15 +25,18 @@ public class BoatMovement : MonoBehaviour {
         GetComponent<Image>().sprite = getRandomBoatSprite;
     }
 
+    private void Start() {
+        transform.localPosition = new Vector3(-Screen.width, transform.localPosition.y);
+    }
+
     private void FixedUpdate() {
         Rotate(shouldTilt);
         Move();
     }
     
     private void Move() {
-        _x += 0.001f * movementSpeed;
-        _y = Mathf.Lerp(-bobAmount * 0.2f, bobAmount * 0.2f, Mathf.PingPong(Time.time * bobSpeed * 0.4f, 1));
-        transform.localPosition += new Vector3(_x, _y);
+        var _y = Mathf.Lerp(-bobAmount * 0.2f, bobAmount * 0.2f, Mathf.PingPong(Time.time * bobSpeed * 0.4f, 1));
+        transform.localPosition += new Vector3(movementSpeed, _y);
         
         if (!IsVisible()) {
             DestroyImmediate(gameObject);
@@ -43,12 +44,12 @@ public class BoatMovement : MonoBehaviour {
     }
 
     private void Rotate(bool b) {
-        if (!shouldTilt) return;
+        if (!b) return;
         var rot = Mathf.Lerp(-rotationAmount * 0.2f, rotationAmount * 0.2f, Mathf.PingPong(Time.time * bobSpeed * 0.4f, 1));
         transform.localRotation = new Quaternion(0, 0, rot, 2);
     }
 
     private bool IsVisible() {
-        return !(transform.localPosition.x > 500f);
+        return !(transform.localPosition.x > Screen.width);
     }
 }

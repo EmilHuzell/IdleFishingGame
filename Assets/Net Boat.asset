@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b099cffa1fe441147b338e80529d62cb, type: 3}
   m_Name: Net Boat
   m_EditorClassIdentifier: 
-  BaseProduce: 1
-  ProduceTime: 1
+  BaseProduce: 500
+  ProduceTime: 10
   amount:
     saveCode: NetBoat_Amount
     amountEffect: 1
     costIncrease: 1.05
-    baseCost: 10
+    baseCost: 150
   upgrade:
     saveCode: NetBoat_Upgrades
     amountEffect: 1
     costIncrease: 1.5
-    baseCost: 100
+    baseCost: 1500

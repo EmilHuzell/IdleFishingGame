@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b099cffa1fe441147b338e80529d62cb, type: 3}
   m_Name: Fishing Boat
   m_EditorClassIdentifier: 
-  BaseProduce: 1
+  BaseProduce: 5
   ProduceTime: 1
   amount:
     saveCode: FishingBoat_Amount

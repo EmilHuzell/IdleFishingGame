@@ -62,7 +62,7 @@ namespace Fish
         private void CalculatePrice()
         {
             marketPrice = Random.Range(fish.minPrice, fish.minPrice * maxPriceMultifier);
-            marketText.text = $"{marketPrice.ToString("F")} Gold/Kg";
+            marketText.text = $"{marketPrice.ToString()}";
         }
 
         public void OnClicked(Button button)

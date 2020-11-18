@@ -631,6 +631,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4439295241537028012, guid: 7f2c929a163c7eb49b616beb6f6cee01,
+        type: 3}
+      propertyPath: minRotation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439295241537028012, guid: 7f2c929a163c7eb49b616beb6f6cee01,
+        type: 3}
+      propertyPath: maxRotation
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4439295241537028013, guid: 7f2c929a163c7eb49b616beb6f6cee01,
         type: 3}
       propertyPath: m_Name

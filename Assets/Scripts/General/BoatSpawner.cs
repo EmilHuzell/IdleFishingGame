@@ -36,7 +36,7 @@ public class BoatSpawner : MonoBehaviour {
     }
 
     private float CheckYPosition(int zVariation, GameObject go) {
-        if (go.GetComponent<SpriteRenderer>().sprite.name == "Idle_Producer_Net_boat") {
+        if (go.GetComponent<SpriteRenderer>().sprite.name == "Idle_Producer_Net_boat_v2") {
             go.transform.localScale = new Vector3(netBoatSize, netBoatSize);
             if (zVariation == 2) {
                 return netBoatYLayer2;

@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boatImages:
-  - {fileID: 21300000, guid: 56af1c8deae913145b47e0249cdfbfef, type: 3}
+  - {fileID: 21300000, guid: eb66a9e3783f90a4799e0ece5b799f24, type: 3}
   - {fileID: 21300000, guid: 905b385d3c5b9224b98294e35fc1dbe9, type: 3}
   - {fileID: 21300000, guid: b4ba548a4885e2a45a0ff1bad0561767, type: 3}
   rotationAmount: 0.5

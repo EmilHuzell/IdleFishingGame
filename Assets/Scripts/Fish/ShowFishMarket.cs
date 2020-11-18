@@ -4,16 +4,16 @@ namespace Fish
 {
     public class ShowFishMarket : MonoBehaviour
     {
-        public GameObject fishStoreUI;
+        public GameObject fishMarket;
 
         private void Start()
         {
-            fishStoreUI.SetActive(false);
+            fishMarket.SetActive(false);
         }
 
         public void showFishMarket()
         {
-            fishStoreUI.SetActive(!fishStoreUI.activeSelf);
+            fishMarket.SetActive(!fishMarket.activeSelf);
         }
     }
 }

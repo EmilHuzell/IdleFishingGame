@@ -25,6 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90eca5f-eebd-435f-85f0-7c3036c09b58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleFishingGame/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605630543633</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="DownSize of fish Popup">
+      <created>1605711377730</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605711377730</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +251,8 @@
     <MESSAGE value="Add show Fish Market button" />
     <MESSAGE value="add fish related functions to Mainscene" />
     <MESSAGE value="Add IAscend interface to FishMarket" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add IAscend interface to FishMarket" />
+    <MESSAGE value="DownSize of fish Popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="DownSize of fish Popup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605255476913">
@@ -262,10 +271,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605630545665" />
-    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605710812292">
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605719555818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605710812292" />
+    <state x="353" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1605719555818" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605170365300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

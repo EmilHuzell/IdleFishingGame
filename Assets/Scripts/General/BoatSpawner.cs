@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class BoatSpawner : MonoBehaviour {
@@ -16,7 +15,7 @@ public class BoatSpawner : MonoBehaviour {
             _checker = 0;
             GameObject go = Instantiate(boatPrefab, waves.transform);
             var yVariation = Random.Range(minYvariation, maxYvariation);
-            go.GetComponent<RectTransform>().localPosition = new Vector3(-500f, waves.transform.position.y + yVariation);
+            go.GetComponent<RectTransform>().localPosition = new Vector3(this.transform.localPosition.x, waves.transform.position.y + yVariation);
         }
     }
 }

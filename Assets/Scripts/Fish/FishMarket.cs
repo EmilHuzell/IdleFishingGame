@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Fish
 {
-    public class FishStore : MonoBehaviour
+    public class FishMarket : MonoBehaviour, IAscend
     {
         private FishType fish;
         public RawImage fishImage;
@@ -39,7 +39,10 @@ namespace Fish
                 elapsedTime = 0;
             }
         }
-
+        public void Ascend()
+        {
+            fish.Reset();
+        }
         private void ButtonUI()
         {
             for (var i = 0; i < 4; i++)

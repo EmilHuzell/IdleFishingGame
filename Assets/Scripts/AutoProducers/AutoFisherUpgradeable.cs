@@ -31,7 +31,6 @@ public class AutoFisherUpgradeable
 
     public void Reset()
     {
-        Debug.Log("DidAReset");
         Amount = 0;
     }
 }

@@ -45,6 +45,7 @@
             <e p="PrintAllPlayerPrefs.cs" t="Include" />
             <e p="SaveMethods.cs" t="Include" />
             <e p="SystemTime.cs" t="Include" />
+            <e p="ToggleActive.cs" t="Include" />
           </e>
         </e>
       </e>

@@ -1,43 +1,31 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class BoatMovement : MonoBehaviour {
     
     public List<Sprite> boatImages;
-    public bool shouldTilt;
     public float rotationAmount;
     public float movementSpeed;
     public float bobAmount;
     public float bobSpeed;
 
     private void Awake() {
-        //Random start tilt doesn't work
-        // if (shouldTilt) {
-        //     var getRandomRot = Random.Range(-10, 10);
-        //     transform.localRotation = new Quaternion(0, 0, getRandomRot, 2);
-        // }
-        
         var getRandomBoatSprite = boatImages[Random.Range(0, boatImages.Count())];
-        if (GetComponent<Image>() != null)
-            GetComponent<Image>().sprite = getRandomBoatSprite;
-        if (GetComponent<SpriteRenderer>() != null)
-            GetComponent<SpriteRenderer>().sprite = getRandomBoatSprite;
-    }
+        GetComponent<SpriteRenderer>().sprite = getRandomBoatSprite;
 
-    private void Start() {
-        transform.localPosition = new Vector3(-Screen.width, transform.localPosition.y);
+        movementSpeed *= 0.01f;
+        bobAmount *= 0.01f;
     }
 
     private void FixedUpdate() {
-        Rotate(shouldTilt);
+        Rotate(true);
         Move();
     }
     
     private void Move() {
-        var _y = Mathf.Lerp(-bobAmount * 0.2f, bobAmount * 0.2f, Mathf.PingPong(Time.time * bobSpeed * 0.4f, 1));
+        var _y = Mathf.Lerp(-bobAmount * 0.1f, bobAmount * 0.1f, Mathf.PingPong(Time.time * bobSpeed * 0.1f, 1));
         transform.localPosition += new Vector3(movementSpeed, _y);
         
         if (!IsVisible()) {
@@ -47,11 +35,11 @@ public class BoatMovement : MonoBehaviour {
 
     private void Rotate(bool b) {
         if (!b) return;
-        var rot = Mathf.Lerp(-rotationAmount * 0.2f, rotationAmount * 0.2f, Mathf.PingPong(Time.time * bobSpeed * 0.4f, 1));
+        var rot = Mathf.Lerp(-rotationAmount * 0.2f, rotationAmount * 0.2f, Mathf.PingPong(Time.time * bobSpeed * 0.1f, 1));
         transform.localRotation = new Quaternion(0, 0, rot, 2);
     }
 
     private bool IsVisible() {
-        return !(transform.localPosition.x > Screen.width);
+        return !(transform.localPosition.x > Camera.main.rect.width + 15);
     }
 }

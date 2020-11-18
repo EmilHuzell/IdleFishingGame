@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de6951b792fc0948be0be95eab50e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intervalBetweenSpawns: 5
+  intervalBetweenSpawns: 20
   boatPrefab: {fileID: 4439295241537028013, guid: 7f2c929a163c7eb49b616beb6f6cee01,
     type: 3}
   netBoatSize: 0.3

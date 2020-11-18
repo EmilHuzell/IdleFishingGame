@@ -9,14 +9,14 @@ public static class Ascension
 
     public static float Multiplier { get => (Amount * 1.1f) + 1; }
 
-    public static BigInteger Requirement { get =>  BigInteger.Pow(10, PlayerPrefs.GetInt("Ascension_Amount", 0)); }
+    public static BigInteger Requirement { get => 1000 * BigInteger.Pow(10, PlayerPrefs.GetInt("Ascension_Amount", 0)); }
 
     public static void Ascend()
     {
         Gold.CurrentGold = 0;
-        foreach (GameObject gameObject in GameObject.FindObjectsOfType<GameObject>())
+        foreach (GameObject go in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[])
         {
-            foreach (IAscend ascend in gameObject.GetComponents<IAscend>())
+            foreach (IAscend ascend in go.GetComponents<IAscend>())
             {
                 ascend.Ascend();
             }

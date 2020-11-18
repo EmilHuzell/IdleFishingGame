@@ -17,7 +17,8 @@ namespace Fish
 
         public void Ascend()
         {
-            fish.Reset();
+            if(fish != null)
+                fish.Reset();
         }
 
         public void setup(FishType fishType)

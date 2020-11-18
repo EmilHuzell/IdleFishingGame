@@ -1525,15 +1525,15 @@ MonoBehaviour:
   netBoatSize: 0.3
   rodBoatSize: 0.3
   harpoonBoatSize: 0.3
-  netBoatYLayer2: 0
-  netBoatYLayer3: 0
-  netBoatYLayer4: 0
-  rodBoatYLayer2: 0
-  rodBoatYLayer3: 0
-  rodBoatYLayer4: 0
-  harpoonBoatYLayer2: 0
-  harpoonBoatYLayer3: 0
-  harpoonBoatYLayer4: 0
+  netBoatYLayer2: -0.11
+  netBoatYLayer3: 0.71
+  netBoatYLayer4: 1.51
+  rodBoatYLayer2: -1.46
+  rodBoatYLayer3: -0.56
+  rodBoatYLayer4: 0.24
+  harpoonBoatYLayer2: -0.05
+  harpoonBoatYLayer3: 0.9
+  harpoonBoatYLayer4: 1.59
 --- !u!4 &1926908258
 Transform:
   m_ObjectHideFlags: 0

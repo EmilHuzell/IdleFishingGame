@@ -21,7 +21,10 @@ public class BoatMovement : MonoBehaviour {
         // }
         
         var getRandomBoatSprite = boatImages[Random.Range(0, boatImages.Count())];
-        GetComponent<Image>().sprite = getRandomBoatSprite;
+        if (GetComponent<Image>() != null)
+            GetComponent<Image>().sprite = getRandomBoatSprite;
+        if (GetComponent<SpriteRenderer>() != null)
+            GetComponent<SpriteRenderer>().sprite = getRandomBoatSprite;
     }
 
     private void Start() {

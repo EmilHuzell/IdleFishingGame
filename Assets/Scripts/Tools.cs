@@ -5,9 +5,8 @@ using UnityEngine.UI;
 
 [CreateAssetMenu]
 public class Tools : ScriptableObject {
-    public int sizeMin = 5;
-    public int sizeMax = 10;
-    public bool unlocked = false;
+    public int minSize = 5;
+    public int maxSize = 10;
     public Texture image;
 }
 

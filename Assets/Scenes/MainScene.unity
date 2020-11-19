@@ -2852,6 +2852,7 @@ GameObject:
   - component: {fileID: 1636389268}
   - component: {fileID: 1636389267}
   - component: {fileID: 1636389271}
+  - component: {fileID: 1636389272}
   m_Layer: 5
   m_Name: GetFish
   m_TagString: Untagged
@@ -2964,6 +2965,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: 7547add21d8fc144da197bf429fa0c0b,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1636389272}
+        m_TargetAssemblyTypeName: ClickSndScript, Assembly-CSharp
+        m_MethodName: PitchVariation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3103,6 +3116,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1636389272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636389265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918e4e1d525dfe648b3a1127d81bcd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pitchMin: 1.2
+  pitchMax: 1.4
 --- !u!1 &1637739605
 GameObject:
   m_ObjectHideFlags: 0

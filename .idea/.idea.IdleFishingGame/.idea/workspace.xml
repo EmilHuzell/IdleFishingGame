@@ -45,6 +45,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/ClickSndScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,6 +80,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/General/BoatSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/Gender.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/ClickSndScript.cs" />
       </list>
     </option>
   </component>
@@ -131,7 +133,7 @@
       <workItem from="1605254791085" duration="4960000" />
       <workItem from="1605600919226" duration="3826000" />
       <workItem from="1605731612167" duration="678000" />
-      <workItem from="1605776242198" duration="461000" />
+      <workItem from="1605776242198" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="Adds FishUI FishSetup">
       <created>1605173857637</created>

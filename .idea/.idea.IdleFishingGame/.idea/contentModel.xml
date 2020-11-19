@@ -35,6 +35,9 @@
             <e p="WaveMovement.cs" t="Include" />
           </e>
           <e p="skyEvolution.cs" t="Include" />
+          <e p="Sound" t="Include">
+            <e p="ClickSndScript.cs" t="Include" />
+          </e>
           <e p="Tools.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AscensionUI.cs" t="Include" />

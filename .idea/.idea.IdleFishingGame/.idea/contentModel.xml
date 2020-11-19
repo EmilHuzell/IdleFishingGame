@@ -30,6 +30,7 @@
             <e p="BoatMovement.cs" t="Include" />
             <e p="BoatSpawner.cs" t="Include" />
             <e p="ClickForGold.cs" t="Include" />
+            <e p="Gender.cs" t="Include" />
             <e p="Gold.cs" t="Include" />
             <e p="WaveMovement.cs" t="Include" />
           </e>

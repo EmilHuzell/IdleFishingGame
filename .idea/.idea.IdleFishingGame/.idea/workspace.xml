@@ -50,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fish/GetFishSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/Gender.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -66,7 +67,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishSetup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tools.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PrintAllPlayerPrefs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/BoatMovement.cs" />
@@ -77,6 +77,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishStoreSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/BoatSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharCreation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/General/Gender.cs" />
       </list>
     </option>
   </component>
@@ -129,6 +131,7 @@
       <workItem from="1605254791085" duration="4960000" />
       <workItem from="1605600919226" duration="3826000" />
       <workItem from="1605731612167" duration="678000" />
+      <workItem from="1605776242198" duration="461000" />
     </task>
     <task id="LOCAL-00001" summary="Adds FishUI FishSetup">
       <created>1605173857637</created>

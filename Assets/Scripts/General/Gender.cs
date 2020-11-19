@@ -1,18 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Gender : MonoBehaviour
-{
-    // Start is called before the first frame update
+public class Gender : MonoBehaviour {
+    public Sprite male, female;
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (PlayerPrefs.GetString("Gender") == "Male") {
+            GetComponent<SpriteRenderer>().sprite = male;
+        }
+        else if (PlayerPrefs.GetString("Gender") == "Female") {
+            GetComponent<SpriteRenderer>().sprite = female;
+        }
     }
 }

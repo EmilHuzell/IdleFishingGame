@@ -1537,7 +1537,7 @@ MonoBehaviour:
   intervalBetweenSpawns: 20
   boatPrefab: {fileID: 4439295241537028013, guid: 7f2c929a163c7eb49b616beb6f6cee01,
     type: 3}
-  netBoatSize: 0.3
+  netBoatSize: 0.25
   rodBoatSize: 0.3
   harpoonBoatSize: 0.3
   netBoatYLayer2: -1.1

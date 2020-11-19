@@ -4,8 +4,8 @@ using System.Text;
 
 public static class PrettifyText {
     private static string Suffix(string currentGold) {
-        var currentGoldString = Converters.BigIntToString(Gold.CurrentGold);
-        var affix = (currentGoldString.Length - 1) / 3;
+        //var currentGoldString = Converters.BigIntToString(Gold.CurrentGold);
+        var affix = (currentGold.Length - 1) / 3;
 
         switch (affix) {
             case 1:

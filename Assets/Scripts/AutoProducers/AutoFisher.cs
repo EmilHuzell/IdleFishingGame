@@ -89,12 +89,12 @@ public class AutoFisher : MonoBehaviour, IAscend
     void UpdateUnitCostText()
     {
         if (unitCostText != null)
-            unitCostText.text = $"Costs: {PrettifyText.FormatModular(autoFisherType.amount.CurrentCost, 2)}";
+            unitCostText.text = $"Costs: {PrettifyText.Format(autoFisherType.amount.CurrentCost)}";
     }
     void UpdateUpgradeCostText()
     {
         if (upgradeCostText != null)
-            upgradeCostText.text = $"Costs: {PrettifyText.FormatModular(autoFisherType.upgrade.CurrentCost, 2)}";
+            upgradeCostText.text = $"Costs: {PrettifyText.Format(autoFisherType.upgrade.CurrentCost)}";
     }
     void UpdateUnitAmountText()
     {

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Rod
   m_EditorClassIdentifier: 
   minSize: 0
-  maxSize: 2
+  maxSize: 3
   image: {fileID: 2800000, guid: bdd6f072f99d65640a4037822438d60d, type: 3}

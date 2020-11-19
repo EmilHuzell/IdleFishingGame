@@ -41,7 +41,8 @@ namespace Fish
         }
         public void Ascend()
         {
-            fish.Reset();
+            if(fish != null)
+                fish.Reset();
         }
         private void ButtonUI()
         {

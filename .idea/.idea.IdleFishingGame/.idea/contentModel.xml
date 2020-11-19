@@ -37,6 +37,7 @@
           <e p="Tools.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AscensionUI.cs" t="Include" />
+            <e p="AscensionUIHideShow.cs" t="Include" />
             <e p="CharCreation.cs" t="Include" />
             <e p="CurrentGoldToText.cs" t="Include" />
             <e p="ToolsUI.cs" t="Include" />

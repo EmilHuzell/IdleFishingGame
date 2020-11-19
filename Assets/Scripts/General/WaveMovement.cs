@@ -13,28 +13,30 @@ public class WaveMovement : MonoBehaviour
     public float speed;
     void Start()
     {
-        this.center = new Vector2(transform.localPosition.x, transform.localPosition.y);
+        this.center = new Vector3(transform.localPosition.x, transform.localPosition.y);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         //update angle
-        if(clockwise == true){
+        if (clockwise == true)
+        {
             this.angle -= this.speed;
-        }else{
+        }
+        else
+        {
             this.angle += this.speed;
         }
-        
-        if(this.angle > Mathf.PI*2 || this.angle < -Mathf.PI*2){
+
+        if (this.angle > Mathf.PI * 2 || this.angle < -Mathf.PI * 2)
+        {
             this.angle = 0;
         }
 
-        //update calculate new localPositio
+        //update calculate new localPosition
         var x = Mathf.Cos(this.angle) * this.radius + this.center.x;
         var y = Mathf.Sin(this.angle) * this.radius + this.center.y;
 
         transform.localPosition = new Vector3(x, y, transform.localPosition.z);
-
     }
-    
 }

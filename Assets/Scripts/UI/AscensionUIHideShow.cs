@@ -11,5 +11,9 @@ public class AscensionUIHideShow : MonoBehaviour
         {
             target.SetActive(true);
         }
+        else
+        {
+            target.SetActive(false);
+        }
     }
 }
